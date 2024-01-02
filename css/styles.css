@@ -632,8 +632,8 @@ img {
 
 .footer {
   padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 0.5px solid rgba(245, 245, 245, 0.2);
+  padding-bottom: 80px;
+  border-bottom:0.5px solid rgba(18, 18, 18, 0.3);
 }
 
 .footer__container {
@@ -847,4 +847,251 @@ img {
   margin-top:16px;
   display: flex;
   justify-content: center;
+}
+
+/* hotel second section */
+
+.hotel__second__section__images{
+  display:flex;
+  gap:32px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:50px;
+}
+
+.hotel__second__section__first__image{
+  width:386px;
+  height:395px;
+}
+
+.hotel__second__section__second__image{
+  width:539px;
+  height:762px;
+}
+
+.hotel__second__section__third__image{
+  width:387px;
+  height:510px;
+}
+
+.hotel__second__section__info{
+  display:flex;
+  justify-content: space-between;
+}
+.hotel__second__section__title{
+  font-family: inherit;
+  font-weight:700;
+  font-size:40px;
+  line-height: 1.1;
+  color: var(--dark-color);
+  margin-bottom:40px;
+}
+
+.hotel__second__section__info__texts{
+  display:flex;
+  font-family: inherit;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.33;
+  text-transform: uppercase;
+  gap:32px;
+}
+
+.hotel__second__section__info__first__text{
+  width:352px;
+  height:192px;
+}
+
+.hotel__second__section__info__second__text{
+  width:299px;
+  height:96px;
+}
+
+.hotel__second__section__buttons{
+  display:flex;
+  gap:14px;
+}
+
+.hotel__second__section__buttons .item button{
+  font-family: inherit;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.33;
+  background-color: transparent;
+  padding:9px 24px 9px 24px;
+  border-radius: 32px;
+  border:solid 0.8px var(--dark-color);
+  color: var(--dark-color);
+  cursor:pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hotel__second__section__buttons .item button:hover,
+.hotel__second__section__buttons .item button:active{
+  background-color:var(--dark-color);
+  color: var(--light-color);
+}
+
+/*hotel third section */
+
+.hotel__third__section__images{
+  display:flex;
+  gap:32px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:50px;
+}
+
+.hotel__third__section__first__image{
+  width:386px;
+  height:395px;
+}
+
+.hotel__third__section__second__image{
+  width:539px;
+  height:762px;
+}
+
+.hotel__third__section__third__image{
+  width:387px;
+  height:510px;
+}
+
+.hotel__third__section__info{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.hotel__third__section__title{
+  font-family: inherit;
+  font-weight:700;
+  font-size:40px;
+  line-height: 1.1;
+  color: var(--dark-color);
+  margin-bottom:40px;
+}
+
+.hotel__third__section__info__texts{
+  display:flex;
+  font-family: inherit;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.33;
+  text-transform: uppercase;
+  gap:32px;
+}
+
+.hotel__third__section__info__first__text{
+  width:370px;
+  height:120px;
+}
+
+.hotel__third__section__info__second__text{
+  width:299px;
+  height:96px;
+}
+
+.hotel__third__section__buttons{
+  display:flex;
+  gap:14px;
+}
+
+.hotel__third__section__buttons .item button{
+  font-family: inherit;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.33;
+  background-color: transparent;
+  padding:9px 24px 9px 24px;
+  border-radius: 32px;
+  border:solid 0.8px var(--dark-color);
+  color: var(--dark-color);
+  cursor:pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hotel__third__section__buttons .item button:hover,
+.hotel__third__section__buttons .item button:active{
+  background-color:var(--dark-color);
+  color: var(--light-color);
+}
+
+/* hotel fourth section */
+
+.hotel__fourth__section__images{
+  display:flex;
+  gap:32px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:50px;
+}
+
+.hotel__fourth__section__first__image{
+  width:386px;
+  height:395px;
+}
+
+.hotel__fourth__section__second__image{
+  width:539px;
+  height:762px;
+}
+
+.hotel__fourth__section__third__image{
+  width:387px;
+  height:510px;
+}
+
+.hotel__fourth__section__info{
+  display:flex;
+  justify-content: space-between;
+}
+.hotel__fourth__section__title{
+  font-family: inherit;
+  font-weight:700;
+  font-size:40px;
+  line-height: 1.1;
+  color: var(--dark-color);
+  margin-bottom:40px;
+}
+
+.hotel__fourth__section__info__text{
+  display:flex;
+  font-family: inherit;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.33;
+  text-transform: uppercase;
+}
+
+.hotel__fourth__section__info__first__text{
+  width:475px;
+  height:144px;
+}
+
+.hotel__fourth__section__buttons{
+  display:flex;
+  gap:14px;
+}
+
+.hotel__fourth__section__buttons .item button{
+  font-family: inherit;
+  font-weight:400;
+  font-size:18px;
+  line-height:1.33;
+  background-color: transparent;
+  padding:9px 24px 9px 24px;
+  border-radius: 32px;
+  border:solid 0.8px var(--dark-color);
+  color: var(--dark-color);
+  cursor:pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hotel__fourth__section__buttons .item button:hover,
+.hotel__fourth__section__buttons .item button:active{
+  background-color:var(--dark-color);
+  color: var(--light-color);
 }
