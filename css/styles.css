@@ -1181,13 +1181,23 @@ ul ::marker {
 
 /* restaurant first section */
 
+.restaunrant__first__section__container {
+  width: 1440px;
+  padding-left: 32px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 30px;
+}
 .restaurant__first__section__title {
   font-family: inherit;
   font-weight: 400;
   font-size: 90px;
   line-height: 1;
+  letter-spacing: 0.02em;
+  min-width: 524px;
   margin-top: 204px;
   margin-bottom: 32px;
+  margin-right: 181px;
 }
 
 .restaurant__first__section__buttons__list {
@@ -1232,19 +1242,15 @@ ul ::marker {
 }
 
 .restaurant__first__section__images {
-  margin-top: 30px;
   display: flex;
+  gap: 32px;
 }
 .restaurant__first__section__first__image {
-  position: relative;
-  right: -200px;
   width: 436px;
   height: 580px;
 }
 
 .restaurant__first__section__second__image {
-  position: relative;
-  right: -230px;
   width: 436px;
   height: 580px;
 }
@@ -1307,6 +1313,7 @@ ul ::marker {
 
 .restaurant__third__section {
   background-color: var(--dark-color);
+  margin-top:100px;
 }
 
 .hotel__third__section__container {
@@ -1330,26 +1337,41 @@ ul ::marker {
   color: var(--light-color);
 }
 
-.restaurant__third__section__first__list {
+.restaurant__third__section__lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.restaurant__third__section__list {
   width: 515px;
 }
 
-.restaurant__third__section__first__list__name::before{
-  content:"";
-  width:4px;
-  height:4px;
-  color:var(--light-color);
+.restaurant__third__section__first__list {
+  margin-right: 74px;
+  margin-bottom: 50px;
 }
 
-.restaurant__third__section__first__list .item:nth-child(-n + 4) {
+.restaurant__third__section__third__list {
+  margin-right: 72px;
+}
+
+.restaurant__third__section__list__name::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  color: var(--light-color);
+}
+
+.restaurant__third__section__list .item:nth-child(-n + 4) {
   margin-bottom: 14px;
 }
-.restaurant__third__section__first__list__item {
+.restaurant__third__section__list__item {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
 }
-.restaurant__third__section__first__list__title {
+
+.restaurant__third__section__list__title {
   font-family: inherit;
   font-weight: 700;
   font-style: italic;
@@ -1360,8 +1382,8 @@ ul ::marker {
   margin-bottom: 32px;
 }
 
-.restaurant__third__section__first__list
-  .rastaurat__third__section__list__item__name {
+.restaurant__third__section__list .rastaurat__third__section__list__item__name {
+  position: relative;
   color: var(--light-color);
   margin-bottom: 8px;
   font-family: inherit;
@@ -1369,6 +1391,19 @@ ul ::marker {
   font-size: 18px;
   line-height: 1.33;
   margin-left: 32px;
+}
+
+.restaurant__third__section__list
+  .rastaurat__third__section__list__item__name::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -7%;
+  transform: translate(40%, -5%);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--light-color);
 }
 
 .restaurant__third__section__list__item__ingredients {
@@ -1379,7 +1414,6 @@ ul ::marker {
   letter-spacing: 0.18em;
   color: rgba(216, 215, 215, 0.5);
   width: 345px;
-  height: 36px;
   margin-bottom: 16px;
 }
 
@@ -1390,6 +1424,7 @@ ul ::marker {
   line-height: 1.28;
   color: rgba(216, 215, 215, 1);
   margin-bottom: 8px;
+  margin-left: 32px;
 }
 
 .rastaurat__third__section__list__item__price {
@@ -1398,4 +1433,160 @@ ul ::marker {
   font-size: 18px;
   line-height: 1.33;
   color: var(--light-color);
+}
+
+.rastaurat__third__section__list__desserts__napoleon__item__name {
+  position: relative;
+  color: var(--light-color);
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: 32px;
+  padding-bottom: 8px;
+}
+
+.rastaurat__third__section__list__desserts__napoleon__item__name::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  transform: translate(30%, -20%);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+}
+
+.rastaurat__third__section__list__desserts__poppy__cake__item__name {
+  position: relative;
+  color: var(--light-color);
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: 32px;
+  padding-bottom: 8px;
+}
+
+.rastaurat__third__section__list__desserts__poppy__cake__item__name::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -25%;
+  transform: translate(30%, -20%);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+}
+
+.rastaurat__third__section__list__desserts__tiramisu__item__name {
+  position: relative;
+  color: var(--light-color);
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: 32px;
+  padding-bottom: 8px;
+}
+
+.rastaurat__third__section__list__desserts__tiramisu__item__name::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -32%;
+  transform: translate(30%, -20%);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+}
+
+.restaurant__third__section__list__drinks__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--light-color);
+  margin-bottom: 32px;
+  margin-top: 22px;
+}
+
+.rastaurat__third__section__list__desserts__tea__item__name {
+  position: relative;
+  color: var(--light-color);
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: 32px;
+  padding-bottom: 8px;
+}
+
+.rastaurat__third__section__list__desserts__tea__item__name::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -18%;
+  transform: translate(30%, -20%);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+}
+
+.rastaurat__third__section__list__desserts__espresso__item__name {
+  position: relative;
+  color: var(--light-color);
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: 32px;
+  padding-bottom: 8px;
+}
+
+.rastaurat__third__section__list__desserts__espresso__item__name::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -30%;
+  transform: translate(30%, -20%);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--light-color);
+}
+
+.rastaurat__third__section__list__desserts__cappuccino__item__name {
+  position: relative;
+  color: var(--light-color);
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: 32px;
+  padding-bottom: 8px;
+}
+
+.rastaurat__third__section__list__desserts__cappuccino__item__name::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -23%;
+  transform: translate(30%, -20%);
+  width: 5px;
+  height: 5px;
+  border-radius: 4px;
+  background-color: var(--light-color);
 }
