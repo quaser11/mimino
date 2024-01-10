@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +29,9 @@
               <a href="./hotel.html" class="header__nav__link active">HOTEL</a>
             </li>
             <li class="item">
-              <a href="./restaurant.html" class="header__nav__link">RESTAURANT</a>
+              <a href="./restaurant.html" class="header__nav__link"
+                >RESTAURANT</a
+              >
             </li>
           </ul>
         </nav>
@@ -59,7 +65,7 @@
             <h1 class="hotel__first__section__title">HOTEL</h1>
             <ul class="hotel__first__section__buttons__list list">
               <li class="item">
-                <button type="button">BOOK A ROOM</button>
+                <button type="button" data-modal-open>BOOK A ROOM</button>
               </li>
               <li class="item">
                 <button type="button">VIEW PRICES</button>
@@ -204,9 +210,17 @@
       <div class="footer__container">
         <nav>
           <ul class="footer__nav__list list">
-            <li class="item"><a href="./index.html" class="footer__nav__link">HOME</a></li>
-            <li class="item"><a href="./hotel.html" class="footer__nav__link">HOTEL</a></li>
-            <li class="item"><a href="./restaurant.html" class="footer__nav__link">RESTAURANT</a></li>
+            <li class="item">
+              <a href="./index.html" class="footer__nav__link">HOME</a>
+            </li>
+            <li class="item">
+              <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+            </li>
+            <li class="item">
+              <a href="./restaurant.html" class="footer__nav__link"
+                >RESTAURANT</a
+              >
+            </li>
           </ul>
         </nav>
         <div class="footer__title">
@@ -216,21 +230,93 @@
         <ul class="footer__social__list list">
           <li class="item">
             <a href="">
-              <img src="./images/dark-instagram.svg" alt="instagram">
+              <img src="./images/dark-instagram.svg" alt="instagram" />
             </a>
           </li>
           <li class="item">
             <a href="">
-              <img src="./images/dark-facebook.svg" alt="facebook">
+              <img src="./images/dark-facebook.svg" alt="facebook" />
             </a>
           </li>
           <li class="item">
             <a href="">
-              <img src="./images/dark-twitter.svg" alt="twitter">
+              <img src="./images/dark-twitter.svg" alt="twitter" />
             </a>
           </li>
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="book-modal">
+        <h2 class="book-modal__title">BOOK A ROOM</h2>
+        <button type="button" class="book-modal__exit__button" data-modal-close>
+          <svg width="32px" height="32px">
+            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+          </svg>
+        </button>
+        <form class="book-modal__form">
+          <label class="field">
+            <input
+              type="name"
+              name="user-name"
+              class="book-modal__form__input"
+              placeholder="YOUR NAME"
+            />
+            <span class="book-modal__form__name__text"
+              >WHO SHOULD BOOK A ROOM FOR?</span
+            >
+          </label>
+
+          <label class="field">
+            <input
+              type="tel"
+              name="tel"
+              class="book-modal__form__input"
+              placeholder="+38 ()"
+            />
+            <span class="book-modal__form__name__text">PHONE NUMBER</span>
+          </label>
+
+          <label class="field date-field">
+            <input
+              type="date"
+              name="check-in date"
+              class="book-modal__form__input__date"
+              placeholder="TODAY"
+            />
+            <span class="book-modal__form__name__text">CHECK-IN DATE</span>
+          </label>
+
+          <label class="field">
+            <input
+              type="date"
+              name="check-out date"
+              class="book-modal__form__input__date"
+              placeholder="YOUR NAME"
+            />
+            <span class="book-modal__form__name__text">CHECK-OUT DATE</span>
+          </label>
+
+          <label class="field">
+            <select name="numbers" class="book-modal__form__input__select">
+              <option value="double-luxury-room">DOUBLE LUXURY ROOM</option>
+              <option value="triple-room">TRIPLE ROOM</option>
+              <option value="four-seater-room">FOUR-SEATER-ROOM</option>
+            </select>
+            <div class="arrow-down-image">
+              <img src="./images/arrow-down.svg" alt="" />
+            </div>
+            <span class="book-modal__form__name__text">NUMBER CATEGORY</span>
+          </label>
+
+          <button type="submit" class="book-modal__submit__button">
+            MAKE A RESERVATION
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script href="./js/modal.js"></script>
   </body>
 </html>

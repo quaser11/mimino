@@ -28,5 +28,8 @@
 <symbol id="icon-arrow-left" viewBox="0 0 18 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M16 30l-14-14 14-14"></path>
 </symbol>
+<symbol id="icon-exit-button" viewBox="0 0 32 32">
+<path fill="none" stroke="#f7f7f7" style="stroke: var(--color1, #f7f7f7)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.8" d="M22.667 9.333l-13.333 13.333M9.333 9.333l13.333 13.333"></path>
+</symbol>
 </defs>
 </svg>
