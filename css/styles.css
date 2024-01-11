@@ -756,6 +756,7 @@ ul ::marker {
   display: flex;
   flex-direction: column;
   width: 266px;
+  cursor: pointer;
 }
 
 .field:nth-child(-n + 4) {
@@ -798,6 +799,7 @@ ul ::marker {
   border: none;
   border-bottom: 0.8px solid #f6f6f633;
   outline: none;
+  cursor: pointer;
 }
 
 .book-modal__form__input__date::before {
@@ -830,8 +832,81 @@ ul ::marker {
   border-bottom: 0.8px solid #f6f6f633;
   outline: none;
   appearance: none;
+  cursor: pointer;
 }
 
+.dropdown{
+  position: relative;
+}
+.custom-select__button {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  width: 266px;
+  text-align: left;
+  color: var(--light-color);
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid #f6f6f633;
+  cursor: pointer;
+}
+
+.custom-select__button::before {
+  position: absolute;
+  content: "";
+  top: 30%;
+  right: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--dark-color);
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-select__list {
+  position: absolute;
+  top:40px;
+  left:0;
+  width:100%;
+
+}
+.custom-select__list-visible{
+  display:block;
+}
+.custom-select__list .item{
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  width: 266px;
+  text-align: left;
+  color: var(--light-color);
+  padding:8px;
+  background-color: var(--dark-color);
+  border:0.8px solid var(--titles-color);
+  border-bottom:none;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.custom-select__list .item:last-child{
+  border-radius:0 0 6px 6px;
+  border-bottom:0.8px solid var(--titles-color);
+}
+.custom-select__list .item:hover,
+.custom-select__list .item:focus{
+  background-color: var(--titles-color);
+}
 .arrow-down-image {
   width: 20px;
   height: 20px;
@@ -839,22 +914,32 @@ ul ::marker {
   top: 5%;
   transform: translate(-30%);
   right: -2%;
+  pointer-events: none;
 }
 
-.book-modal__submit__button{
-  margin-top:80px;
-  margin-left:60px;
-  margin-right:60px;
+.book-modal__submit__button {
+  margin-top: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
   font-family: inherit;
-  font-weight:400;
-  font-size:17px;
-  line-height:1.33;
-  width:444px;
-  padding:14px 134px 14px 134px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.33;
+  width: 444px;
+  padding: 14px 134px 14px 134px;
   background-color: transparent;
-  border:0.8px solid var(--light-color);
+  cursor: pointer;
+  border: 0.8px solid var(--light-color);
   border-radius: 32px;
-  color:var(--light-color);
+  color: var(--light-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.book-modal__submit__button:hover,
+.book-modal__submit__button:focus {
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 .book-modal__form__name__text {
   font-family: inherit;
