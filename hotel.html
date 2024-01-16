@@ -1,386 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>MIMINO</title>
-  </head>
-  <body>
-    <header class="hotel__header">
-      <div class="hotel__header__container">
-        <nav>
-          <ul class="hotel__header__nav__list list">
-            <li class="item">
-              <a href="./index.html" class="header__nav__link">HOME</a>
-            </li>
-            <li class="item">
-              <a href="./hotel.html" class="header__nav__link active">HOTEL</a>
-            </li>
-            <li class="item">
-              <a href="./restaurant.html" class="header__nav__link"
-                >RESTAURANT</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div class="hotel__header__title">
-          <h1 class="hotel__header__title__name">MIMINO</h1>
-          <p class="hotel__header__title__text">RESTAURANT-HOTEL COMPLEX</p>
-        </div>
-        <ul class="hotel__header__social__list list">
-          <li>
-            <a href="">
-              <img src="./images/dark-instagram.svg" alt="instagram" />
-            </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <title>MIMINO</title>
+</head>
+
+<body>
+  <header class="hotel__header">
+    <div class="hotel__header__container">
+      <nav>
+        <ul class="hotel__header__nav__list list">
+          <li class="item">
+            <a href="./index.html" class="header__nav__link">HOME</a>
           </li>
-          <li>
-            <a href="">
-              <img src="./images/dark-facebook.svg" alt="facebook" />
-            </a>
+          <li class="item">
+            <a href="./hotel.html" class="header__nav__link active">HOTEL</a>
           </li>
-          <li>
-            <a href="">
-              <img src="./images/dark-twitter.svg" alt="twitter" />
-            </a>
+          <li class="item">
+            <a href="./restaurant.html" class="header__nav__link">RESTAURANT</a>
           </li>
         </ul>
+      </nav>
+      <div class="hotel__header__title">
+        <h1 class="hotel__header__title__name">MIMINO</h1>
+        <p class="hotel__header__title__text">RESTAURANT-HOTEL COMPLEX</p>
       </div>
-    </header>
-    <section class="hotel__first__section">
-      <div class="hotel__first__section__container">
-        <div class="hotel__first__section__items">
-          <div class="hotel__first__section__info">
-            <h1 class="hotel__first__section__title">HOTEL</h1>
-            <ul class="hotel__first__section__buttons__list list">
-              <li class="item">
-                <button type="button" class="open-modal-button" data-modal-id="bookModal">BOOK A ROOM</button>
-              </li>
-              <li class="item">
-                <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
-              </li>
-            </ul>
-            <p class="hotel__first__section__text">
-              Whether you're in the mood for a hearty breakfast, a light lunch,
-              or a romantic dinner, our menu has something for everyone.
+      <ul class="hotel__header__social__list list">
+        <li>
+          <a href="">
+            <img src="./images/dark-instagram.svg" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/dark-facebook.svg" alt="facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./images/dark-twitter.svg" alt="twitter" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section class="hotel__first__section">
+    <div class="hotel__first__section__container">
+      <div class="hotel__first__section__items">
+        <div class="hotel__first__section__info">
+          <h1 class="hotel__first__section__title">HOTEL</h1>
+          <ul class="hotel__first__section__buttons__list list">
+            <li class="item">
+              <button type="button" class="open-modal-button" data-modal-id="bookModal">
+                BOOK A ROOM
+              </button>
+            </li>
+            <li class="item">
+              <button type="button" class="open-modal-button" data-modal-id="priceModal">
+                VIEW PRICES
+              </button>
+            </li>
+          </ul>
+          <p class="hotel__first__section__text">
+            Whether you're in the mood for a hearty breakfast, a light lunch,
+            or a romantic dinner, our menu has something for everyone.
+          </p>
+        </div>
+        <div class="hotel__first__section__images">
+          <div class="hotel__first__section__first__image">
+            <img src="./images/hotel-first-section-first-image.jpg" alt="" />
+          </div>
+          <div class="hotel__first__section__second__image">
+            <img src="./images/hotel-first-section-second-image.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section hotel__second__section">
+    <div class="container">
+      <div class="hotel__second__section__images">
+        <div class="hotel__second__section__first__image">
+          <img src="./images/hotel-second-section-first-image.jpg" alt="" />
+        </div>
+        <div class="hotel__second__section__second__image">
+          <img src="./images/hotel-second-section-second-image.jpg" alt="" />
+        </div>
+        <div class="hotel__second__section__third__image">
+          <img src="./images/hotel-second-section-third-image.jpg" alt="" />
+        </div>
+      </div>
+      <div class="hotel__second__section__info">
+        <div>
+          <h2 class="hotel__second__section__title">DOUBLE LUXURY ROOM</h2>
+          <div class="hotel__second__section__info__texts">
+            <p class="hotel__second__section__info__first__text">
+              Experience luxury in our Double Luxury Room at Mimino Hotel.
+              This spacious room features a comfortable bed, private bathroom,
+              flat-screen TV, and high-speed Wi-Fi. Climate control, blackout
+              curtains, and soundproofing ensure a peaceful night's sleep.
+            </p>
+            <p class="hotel__second__section__info__second__text">
+              Relax after a busy day at the writing desk or armchair. Book now
+              for a convenient and comfortable stay.
             </p>
           </div>
-          <div class="hotel__first__section__images">
-            <div class="hotel__first__section__first__image">
-              <img src="./images/hotel-first-section-first-image.jpg" alt="" />
-            </div>
-            <div class="hotel__first__section__second__image">
-              <img src="./images/hotel-first-section-second-image.jpg" alt="" />
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="section hotel__second__section">
-      <div class="container">
-        <div class="hotel__second__section__images">
-          <div class="hotel__second__section__first__image">
-            <img src="./images/hotel-second-section-first-image.jpg" alt="" />
-          </div>
-          <div class="hotel__second__section__second__image">
-            <img src="./images/hotel-second-section-second-image.jpg" alt="" />
-          </div>
-          <div class="hotel__second__section__third__image">
-            <img src="./images/hotel-second-section-third-image.jpg" alt="" />
-          </div>
-        </div>
-        <div class="hotel__second__section__info">
-          <div>
-            <h2 class="hotel__second__section__title">DOUBLE LUXURY ROOM</h2>
-            <div class="hotel__second__section__info__texts">
-              <p class="hotel__second__section__info__first__text">
-                Experience luxury in our Double Luxury Room at Mimino Hotel.
-                This spacious room features a comfortable bed, private bathroom,
-                flat-screen TV, and high-speed Wi-Fi. Climate control, blackout
-                curtains, and soundproofing ensure a peaceful night's sleep.
-              </p>
-              <p class="hotel__second__section__info__second__text">
-                Relax after a busy day at the writing desk or armchair. Book now
-                for a convenient and comfortable stay.
-              </p>
-            </div>
-          </div>
 
-          <ul class="hotel__second__section__buttons list">
-            <li class="item">
-              <button type="button">MORE DETAILS</button>
-            </li>
-            <li class="item">
-              <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section hotel__third__section">
-      <div class="container">
-        <div class="hotel__third__section__images">
-          <div class="hotel__second__section__first__image">
-            <img src="./images/hotel-third-section-first-image.jpg" alt="" />
-          </div>
-          <div class="hotel__second__section__second__image">
-            <img src="./images/hotel-third-section-second-image.jpg" alt="" />
-          </div>
-          <div class="hotel__second__section__third__image">
-            <img src="./images/hotel-third-section-third-image.jpg" alt="" />
-          </div>
-        </div>
-        <div class="hotel__third__section__info">
-          <div>
-            <h2 class="hotel__third__section__title">Triple Room</h2>
-            <div class="hotel__third__section__info__texts">
-              <p class="hotel__third__section__info__first__text">
-                Escape to our spacious Triple Room, perfect for families or
-                groups. Enjoy comfort with three beds, seating area, stunning
-                views, flat-screen TVs, Wi-Fi, and mini-fridge.
-              </p>
-              <p class="hotel__third__section__info__second__text">
-                Rejuvenate in the en-suite bathroom with plush towels and
-                toiletries. Book now for a memorable stay.
-              </p>
-            </div>
-          </div>
-
-          <ul class="hotel__third__section__buttons list">
-            <li class="item">
-              <button type="button">MORE DETAILS</button>
-            </li>
-            <li class="item">
-              <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section hotel__fourth__section">
-      <div class="container">
-        <div class="hotel__fourth__section__images">
-          <div class="hotel__fourth__section__first__image">
-            <img src="./images/hotel-fourth-section-first-image.jpg" alt="" />
-          </div>
-          <div class="hotel__fourth__section__second__image">
-            <img src="./images/hotel-fourth-section-second-image.jpg" alt="" />
-          </div>
-          <div class="hotel__fourth__section__third__image">
-            <img src="./images/hotel-fourth-section-third-image.jpg" alt="" />
-          </div>
-        </div>
-        <div class="hotel__fourth__section__info">
-          <div>
-            <h2 class="hotel__fourth__section__title">FOUR-SEATER ROOM</h2>
-            <div class="hotel__fourth__section__info__text">
-              <p class="hotel__fourth__section__info__first__text">
-                Our 4-person room is perfect for small groups, offering comfort
-                and convenience with 4 comfortable beds, ample storage,
-                flat-screen TV, mini-fridge, coffee maker, desk and chair,
-                air-conditioning, heating, and soundproof walls. Book now for a
-                memorable stay.
-              </p>
-            </div>
-          </div>
-
-          <ul class="hotel__fourth__section__buttons list">
-            <li class="item">
-              <button type="button">MORE DETAILS</button>
-            </li>
-            <li class="item">
-              <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <footer class="section footer">
-      <div class="footer__container">
-        <nav>
-          <ul class="footer__nav__list list">
-            <li class="item">
-              <a href="./index.html" class="footer__nav__link">HOME</a>
-            </li>
-            <li class="item">
-              <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
-            </li>
-            <li class="item">
-              <a href="./restaurant.html" class="footer__nav__link"
-                >RESTAURANT</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__title">
-          <h1 class="footer__title__name">MIMINO</h1>
-          <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
-        </div>
-        <ul class="footer__social__list list">
+        <ul class="hotel__second__section__buttons list">
           <li class="item">
-            <a href="">
-              <img src="./images/dark-instagram.svg" alt="instagram" />
-            </a>
+            <button type="button">MORE DETAILS</button>
           </li>
           <li class="item">
-            <a href="">
-              <img src="./images/dark-facebook.svg" alt="facebook" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              <img src="./images/dark-twitter.svg" alt="twitter" />
-            </a>
+            <button type="button" class="open-modal-button" data-modal-id="priceModal">
+              VIEW PRICES
+            </button>
           </li>
         </ul>
       </div>
-    </footer>
+    </div>
+  </section>
+  <section class="section hotel__third__section">
+    <div class="container">
+      <div class="hotel__third__section__images">
+        <div class="hotel__second__section__first__image">
+          <img src="./images/hotel-third-section-first-image.jpg" alt="" />
+        </div>
+        <div class="hotel__second__section__second__image">
+          <img src="./images/hotel-third-section-second-image.jpg" alt="" />
+        </div>
+        <div class="hotel__second__section__third__image">
+          <img src="./images/hotel-third-section-third-image.jpg" alt="" />
+        </div>
+      </div>
+      <div class="hotel__third__section__info">
+        <div>
+          <h2 class="hotel__third__section__title">Triple Room</h2>
+          <div class="hotel__third__section__info__texts">
+            <p class="hotel__third__section__info__first__text">
+              Escape to our spacious Triple Room, perfect for families or
+              groups. Enjoy comfort with three beds, seating area, stunning
+              views, flat-screen TVs, Wi-Fi, and mini-fridge.
+            </p>
+            <p class="hotel__third__section__info__second__text">
+              Rejuvenate in the en-suite bathroom with plush towels and
+              toiletries. Book now for a memorable stay.
+            </p>
+          </div>
+        </div>
 
-    <div class="backdrop"></div>
-    <div class="modal" id="bookModal">
-      <div class="book-modal">
-        <h2 class="book-modal__title">BOOK A ROOM</h2>
-        <button type="button" class="book-modal__exit__button" data-modal-id="bookModal">
-          <svg width="32px" height="32px">
-            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
-          </svg>
-        </button>
-        <form class="book-modal__form">
-          <label class="field">
-            <input
-              type="name"
-              name="user-name"
-              class="book-modal__form__input"
-              placeholder="YOUR NAME"
-            />
-            <span class="book-modal__form__name__text"
-              >WHO SHOULD BOOK A ROOM FOR?</span
-            >
-          </label>
-  
-          <label class="field">
-            <input
-              type="tel"
-              name="tel"
-              class="book-modal__form__input"
-              placeholder="+38 ()"
-              maxlength="13"
-            />
-            <span class="book-modal__form__name__text">PHONE NUMBER</span>
-          </label>
-  
-          <label class="field date-field">
-            <input
-              type="date"
-              name="check-in date"
-              class="book-modal__form__input__date"
-              placeholder="TODAY"
-            />
-            <span class="book-modal__form__name__text">CHECK-IN DATE</span>
-          </label>
-  
-          <label class="field">
-            <input
-              type="date"
-              name="check-out date"
-              class="book-modal__form__input__date"
-              placeholder="YOUR NAME"
-            />
-            <span class="book-modal__form__name__text">CHECK-OUT DATE</span>
-          </label>
-  
-          <div class="custom-select">
-            <div class="dropdown">
-              <button type="button" class="custom-select__button">
+        <ul class="hotel__third__section__buttons list">
+          <li class="item">
+            <button type="button">MORE DETAILS</button>
+          </li>
+          <li class="item">
+            <button type="button" class="open-modal-button" data-modal-id="priceModal">
+              VIEW PRICES
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="section hotel__fourth__section">
+    <div class="container">
+      <div class="hotel__fourth__section__images">
+        <div class="hotel__fourth__section__first__image">
+          <img src="./images/hotel-fourth-section-first-image.jpg" alt="" />
+        </div>
+        <div class="hotel__fourth__section__second__image">
+          <img src="./images/hotel-fourth-section-second-image.jpg" alt="" />
+        </div>
+        <div class="hotel__fourth__section__third__image">
+          <img src="./images/hotel-fourth-section-third-image.jpg" alt="" />
+        </div>
+      </div>
+      <div class="hotel__fourth__section__info">
+        <div>
+          <h2 class="hotel__fourth__section__title">FOUR-SEATER ROOM</h2>
+          <div class="hotel__fourth__section__info__text">
+            <p class="hotel__fourth__section__info__first__text">
+              Our 4-person room is perfect for small groups, offering comfort
+              and convenience with 4 comfortable beds, ample storage,
+              flat-screen TV, mini-fridge, coffee maker, desk and chair,
+              air-conditioning, heating, and soundproof walls. Book now for a
+              memorable stay.
+            </p>
+          </div>
+        </div>
+
+        <ul class="hotel__fourth__section__buttons list">
+          <li class="item">
+            <button type="button">MORE DETAILS</button>
+          </li>
+          <li class="item">
+            <button type="button" class="open-modal-button" data-modal-id="priceModal">
+              VIEW PRICES
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="section footer">
+    <div class="footer__container">
+      <nav>
+        <ul class="footer__nav__list list">
+          <li class="item">
+            <a href="./index.html" class="footer__nav__link">HOME</a>
+          </li>
+          <li class="item">
+            <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+          </li>
+          <li class="item">
+            <a href="./restaurant.html" class="footer__nav__link">RESTAURANT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__title">
+        <h1 class="footer__title__name">MIMINO</h1>
+        <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+      </div>
+      <ul class="footer__social__list list">
+        <li class="item">
+          <a href="">
+            <img src="./images/dark-instagram.svg" alt="instagram" />
+          </a>
+        </li>
+        <li class="item">
+          <a href="">
+            <img src="./images/dark-facebook.svg" alt="facebook" />
+          </a>
+        </li>
+        <li class="item">
+          <a href="">
+            <img src="./images/dark-twitter.svg" alt="twitter" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="backdrop"></div>
+  <div class="modal" id="bookModal">
+    <div class="book-modal">
+      <h2 class="book-modal__title">BOOK A ROOM</h2>
+      <button type="button" class="book-modal__exit__button" data-modal-id="bookModal">
+        <svg width="32px" height="32px">
+          <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+        </svg>
+      </button>
+      <form class="book-modal__form">
+        <label class="field">
+          <input type="name" name="user-name" class="book-modal__form__input" placeholder="YOUR NAME" />
+          <span class="book-modal__form__name__text">WHO SHOULD BOOK A ROOM FOR?</span>
+        </label>
+
+        <label class="field">
+          <input type="tel" name="tel" class="book-modal__form__input" placeholder="+38 ()" maxlength="13" />
+          <span class="book-modal__form__name__text">PHONE NUMBER</span>
+        </label>
+
+        <label class="field date-field">
+          <input type="date" name="check-in date" class="book-modal__form__input__date" placeholder="TODAY" />
+          <span class="book-modal__form__name__text">CHECK-IN DATE</span>
+        </label>
+
+        <label class="field">
+          <input type="date" name="check-out date" class="book-modal__form__input__date" placeholder="YOUR NAME" />
+          <span class="book-modal__form__name__text">CHECK-OUT DATE</span>
+        </label>
+
+        <div class="custom-select">
+          <div class="dropdown">
+            <button type="button" class="custom-select__button">
+              DOUBLE LUXURY ROOM
+            </button>
+            <input type="text" name="select-category" value="" class="custom-select__input__hidden" />
+            <ul class="custom-select__list list">
+              <li class="item" data-value="double-luxury-room">
                 DOUBLE LUXURY ROOM
+              </li>
+              <li class="item" data-value="triple-room">TRIPLE ROOM</li>
+              <li class="item" data-value="four-seater-room">
+                FOUR-SEATER ROOM
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button type="submit" class="book-modal__submit__button">
+          MAKE A RESERVATION
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="priceModal">
+    <div class="price-modal">
+      <button type="button" class="book-modal__exit__button" data-modal-id="priceModal">
+        <svg width="32px" height="32px">
+          <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+        </svg>
+      </button>
+      <h2 class="price-modal__title">PRICES PER ROOM</h2>
+      <form class="price-modal__form">
+        <span class="double-suite">DOUBLE SUITE</span>
+        <div class="custom-select__buttons">
+          <div class="custom-select-days">
+            <div class="dropdown-days">
+              <button type="button" class="custom-select-days__button" data-value="1">
+                1
               </button>
-              <input
-                type="text"
-                name="select-category"
-                value=""
-                class="custom-select__input__hidden"
-              />
-              <ul class="custom-select__list list">
-                <li class="item" data-value="double-luxury-room">
-                  DOUBLE LUXURY ROOM
+              <p class="price-modal__form__text">NUMBER OF NIGHTS</p>
+              <input type="text" name="select-category" value="" class="custom-select__input__hidden" />
+
+              <ul class="custom-select-days-list days-list">
+                <li class="custom-select-days-list__item" data-value="1">
+                  1
                 </li>
-                <li class="item" data-value="triple-room">TRIPLE ROOM</li>
-                <li class="item" data-value="four-seater-room">
-                  FOUR-SEATER ROOM
+                <li class="custom-select-days-list__item" data-value="2">
+                  2
+                </li>
+                <li class="custom-select-days-list__item" data-value="3">
+                  3
+                </li>
+                <li class="custom-select-days-list__item" data-value="4">
+                  4
+                </li>
+                <li class="custom-select-days-list__item" data-value="5">
+                  5
+                </li>
+                <li class="custom-select-days-list__item" data-value="6">
+                  6
+                </li>
+                <li class="custom-select-days-list__item" data-value="7">
+                  7
                 </li>
               </ul>
             </div>
           </div>
-  
-          <button type="submit" class="book-modal__submit__button">
-            MAKE A RESERVATION
-          </button>
-        </form>
-      </div>
-    </div>
 
-    <div class="modal" id="priceModal">
-      <div class="price-modal">
-        <button type="button" class="book-modal__exit__button" data-modal-id="priceModal">
-          <svg width="32px" height="32px">
-            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
-          </svg>
-        </button>
-        <h2 class="price-modal__title">PRICES PER ROOM</h2>
-        <form class="price-modal__form">
-          <span class="double-suite">DOUBLE SUITE</span>
-          <div class="custom-select__buttons">
-            <div class="custom-select">
-              <div class="dropdown">
-                <button type="button" class="custom-select__button" data-value="1">1</button>
-                <p class="price-modal__form__text">NUMBER OF NIGHTS</p>
-                <input
-                  type="text"
-                  name="select-category"
-                  value=""
-                  class="custom-select__input__hidden"
-                />
-  
-                <ul class="custom-select__list list">
-                  <li class="item" data-value="1">1</li>
-                  <li class="item" data-value="2">2</li>
-                  <li class="item" data-value="3">3</li>
-                  <li class="item" data-value="4">4</li>
-                  <li class="item" data-value="5">5</li>
-                  <li class="item" data-value="6">6</li>
-                  <li class="item" data-value="7">7</li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="price-modal__second__input">
-              <button type="button" class="custom-select__second__button" data-value="1000">
-                1000
-              </button>
-              <p class="price-modal__form__text">UAH</p>
-            </div>
+          <div class="price-modal__second__input">
+            <button type="button" class="custom-select-price__button" data-value="1000">
+              1000
+            </button>
+            <p class="price-modal__form__text">UAH</p>
           </div>
-          <button type="submit" class="book-modal__submit__button">
-            MAKE A RESERVATION
-          </button>
-        </form>
-      </div>
+        </div>
+        <button type="submit" class="book-modal__submit__button">
+          MAKE A RESERVATION
+        </button>
+      </form>
     </div>
+  </div>
+</body>
+<script src="./js/custom-select.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/price-modal.js"></script>
 
-    
-  </body>
-  <script src="./js/custom-select.js"></script>
-  <script src="./js/modal.js"></script>
-  <script src="/js/price-modal.js"></script>
 </html>

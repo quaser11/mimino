@@ -1,3 +1,6 @@
+li {
+  list-style: none;
+}
 :root {
   --dark-color: #121212;
   --light-color: #f6f6f6;
@@ -731,8 +734,6 @@ ul ::marker {
 }
 
 .book-modal {
-
-
   width: 628px;
   height: 572px;
   padding: 32px 32px 60px 32px;
@@ -852,6 +853,27 @@ ul ::marker {
   position: relative;
 }
 
+.dropdown-days {
+  position: relative;
+}
+
+.custom-select-days__button {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  width: 266px;
+  text-align: left;
+  color: var(--light-color);
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid #f6f6f633;
+  cursor: pointer;
+}
 .custom-select__button {
   position: relative;
   font-family: inherit;
@@ -891,11 +913,19 @@ ul ::marker {
   left: 0;
   width: 100%;
   display: none;
-
+}
+.custom-select-days-list {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  display: none;
 }
 
-
 .custom-select__list-visible {
+  display: block;
+}
+.custom-select-days-list--visible {
   display: block;
 }
 
@@ -903,6 +933,22 @@ ul ::marker {
   visibility: hidden;
 }
 .custom-select__list .item {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  width: 266px;
+  text-align: left;
+  color: var(--light-color);
+  padding: 8px;
+  background-color: var(--dark-color);
+  border: 0.8px solid var(--titles-color);
+  border-bottom: none;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.custom-select-days-list .custom-select-days-list__item {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -977,7 +1023,6 @@ ul ::marker {
   color: var(--light-color);
 }
 
-
 .price-modal {
   position: absolute;
   top: 50%;
@@ -1000,9 +1045,9 @@ ul ::marker {
   margin-bottom: 60px;
 }
 
-.custom-select__buttons{
-  display:flex;
-  gap:32px;
+.custom-select__buttons {
+  display: flex;
+  gap: 32px;
 }
 .double-suite {
   display: block;
@@ -1021,14 +1066,15 @@ ul ::marker {
   line-height: 1.5;
   color: var(--modal-text);
 }
-.price-modal__second__input{
-  margin-top:4px;
+.price-modal__second__input {
+  margin-top: 4px;
 }
 
-.modal, .backdrop {
+.modal,
+.backdrop {
   display: none;
 }
-.custom-select__second__button {
+.custom-select-price__button {
   position: relative;
   font-family: inherit;
   font-weight: 500;
