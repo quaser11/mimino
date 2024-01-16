@@ -45,11 +45,16 @@ ul ::marker {
   width: 100%;
   height: 100%;
   background-color: #2e2f4266;
+  z-index: 999;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -714,11 +719,19 @@ ul ::marker {
 
 /*------------------------------------------------------------------------ HOTEL PAGE ------------------------------------------------------------------------------ */
 
-.book-modal {
-  position: relative;
+.modal {
+  display: none;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.book-modal {
+
 
   width: 628px;
   height: 572px;
@@ -835,9 +848,10 @@ ul ::marker {
   cursor: pointer;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
 }
+
 .custom-select__button {
   position: relative;
   font-family: inherit;
@@ -873,15 +887,22 @@ ul ::marker {
 
 .custom-select__list {
   position: absolute;
-  top:40px;
-  left:0;
-  width:100%;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  display: none;
 
 }
-.custom-select__list-visible{
-  display:block;
+
+
+.custom-select__list-visible {
+  display: block;
 }
-.custom-select__list .item{
+
+.custom-select__input__hidden {
+  visibility: hidden;
+}
+.custom-select__list .item {
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -889,22 +910,21 @@ ul ::marker {
   width: 266px;
   text-align: left;
   color: var(--light-color);
-  padding:8px;
+  padding: 8px;
   background-color: var(--dark-color);
-  border:0.8px solid var(--titles-color);
-  border-bottom:none;
+  border: 0.8px solid var(--titles-color);
+  border-bottom: none;
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.custom-select__list .item:last-child{
-  border-radius:0 0 6px 6px;
-  border-bottom:0.8px solid var(--titles-color);
+.custom-select__list .item:last-child {
+  border-radius: 0 0 6px 6px;
+  border-bottom: 0.8px solid var(--titles-color);
 }
 .custom-select__list .item:hover,
-.custom-select__list .item:focus{
+.custom-select__list .item:focus {
   background-color: var(--titles-color);
 }
 .arrow-down-image {
@@ -955,6 +975,74 @@ ul ::marker {
   font-size: 14px;
   line-height: 1.28;
   color: var(--light-color);
+}
+
+
+.price-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 628px;
+  height: 430px;
+  padding: 32px 24px 60px 24px;
+  background-color: var(--dark-color);
+}
+
+.price-modal__title {
+  font-family: inherit;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--light-color);
+
+  margin-bottom: 60px;
+}
+
+.custom-select__buttons{
+  display:flex;
+  gap:32px;
+}
+.double-suite {
+  display: block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.125;
+  color: var(--light-color);
+  margin-bottom: 32px;
+}
+
+.price-modal__form__text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: var(--modal-text);
+}
+.price-modal__second__input{
+  margin-top:4px;
+}
+
+.modal, .backdrop {
+  display: none;
+}
+.custom-select__second__button {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  width: 266px;
+  text-align: left;
+  color: var(--light-color);
+  text-transform: uppercase;
+  padding-bottom: 18px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.8px solid #f6f6f633;
 }
 
 .hotel__header {

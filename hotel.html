@@ -65,10 +65,10 @@
             <h1 class="hotel__first__section__title">HOTEL</h1>
             <ul class="hotel__first__section__buttons__list list">
               <li class="item">
-                <button type="button" data-modal-open>BOOK A ROOM</button>
+                <button type="button" class="open-modal-button" data-modal-id="bookModal">BOOK A ROOM</button>
               </li>
               <li class="item">
-                <button type="button">VIEW PRICES</button>
+                <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
               </li>
             </ul>
             <p class="hotel__first__section__text">
@@ -122,7 +122,7 @@
               <button type="button">MORE DETAILS</button>
             </li>
             <li class="item">
-              <button type="button">VIEW PRICES</button>
+              <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
             </li>
           </ul>
         </div>
@@ -162,7 +162,7 @@
               <button type="button">MORE DETAILS</button>
             </li>
             <li class="item">
-              <button type="button">VIEW PRICES</button>
+              <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
             </li>
           </ul>
         </div>
@@ -200,7 +200,7 @@
               <button type="button">MORE DETAILS</button>
             </li>
             <li class="item">
-              <button type="button">VIEW PRICES</button>
+              <button type="button" class="open-modal-button" data-modal-id="priceModal">VIEW PRICES</button>
             </li>
           </ul>
         </div>
@@ -247,10 +247,11 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop"></div>
+    <div class="modal" id="bookModal">
       <div class="book-modal">
         <h2 class="book-modal__title">BOOK A ROOM</h2>
-        <button type="button" class="book-modal__exit__button" data-modal-close>
+        <button type="button" class="book-modal__exit__button" data-modal-id="bookModal">
           <svg width="32px" height="32px">
             <use href="./images/symbol-defs.svg#icon-exit-button"></use>
           </svg>
@@ -267,17 +268,18 @@
               >WHO SHOULD BOOK A ROOM FOR?</span
             >
           </label>
-
+  
           <label class="field">
             <input
               type="tel"
               name="tel"
               class="book-modal__form__input"
               placeholder="+38 ()"
+              maxlength="13"
             />
             <span class="book-modal__form__name__text">PHONE NUMBER</span>
           </label>
-
+  
           <label class="field date-field">
             <input
               type="date"
@@ -287,7 +289,7 @@
             />
             <span class="book-modal__form__name__text">CHECK-IN DATE</span>
           </label>
-
+  
           <label class="field">
             <input
               type="date"
@@ -297,28 +299,88 @@
             />
             <span class="book-modal__form__name__text">CHECK-OUT DATE</span>
           </label>
-
+  
           <div class="custom-select">
             <div class="dropdown">
-              <button type="button" class="custom-select__button">DOUBLE LUXURY ROOM</button>
+              <button type="button" class="custom-select__button">
+                DOUBLE LUXURY ROOM
+              </button>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="custom-select__input__hidden"
+              />
               <ul class="custom-select__list list">
-                <li class="item" data-value="double-luxury-room">DOUBLE LUXURY ROOM</li>
+                <li class="item" data-value="double-luxury-room">
+                  DOUBLE LUXURY ROOM
+                </li>
                 <li class="item" data-value="triple-room">TRIPLE ROOM</li>
-                <li class="item" data-value="four-seater-room">FOUR-SEATER ROOM</li>
+                <li class="item" data-value="four-seater-room">
+                  FOUR-SEATER ROOM
+                </li>
               </ul>
-              <input type="text" name="select-category" value="" class="custom-select__input__hidden">
             </div>
-          </div>  
-
+          </div>
+  
           <button type="submit" class="book-modal__submit__button">
             MAKE A RESERVATION
           </button>
-
-      
         </form>
       </div>
     </div>
-    <script href="./js/custom-select.js"></script>
-    <script href="./js/modal.js"></script>
+
+    <div class="modal" id="priceModal">
+      <div class="price-modal">
+        <button type="button" class="book-modal__exit__button" data-modal-id="priceModal">
+          <svg width="32px" height="32px">
+            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+          </svg>
+        </button>
+        <h2 class="price-modal__title">PRICES PER ROOM</h2>
+        <form class="price-modal__form">
+          <span class="double-suite">DOUBLE SUITE</span>
+          <div class="custom-select__buttons">
+            <div class="custom-select">
+              <div class="dropdown">
+                <button type="button" class="custom-select__button" data-value="1">1</button>
+                <p class="price-modal__form__text">NUMBER OF NIGHTS</p>
+                <input
+                  type="text"
+                  name="select-category"
+                  value=""
+                  class="custom-select__input__hidden"
+                />
+  
+                <ul class="custom-select__list list">
+                  <li class="item" data-value="1">1</li>
+                  <li class="item" data-value="2">2</li>
+                  <li class="item" data-value="3">3</li>
+                  <li class="item" data-value="4">4</li>
+                  <li class="item" data-value="5">5</li>
+                  <li class="item" data-value="6">6</li>
+                  <li class="item" data-value="7">7</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="price-modal__second__input">
+              <button type="button" class="custom-select__second__button" data-value="1000">
+                1000
+              </button>
+              <p class="price-modal__form__text">UAH</p>
+            </div>
+          </div>
+          <button type="submit" class="book-modal__submit__button">
+            MAKE A RESERVATION
+          </button>
+        </form>
+      </div>
+    </div>
+
+    
   </body>
+  <script src="./js/custom-select.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="/js/price-modal.js"></script>
 </html>

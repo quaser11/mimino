@@ -1,7 +1,7 @@
 document.querySelectorAll(".dropdown").forEach(function (dropDownWrapper) {
   const dropDownBtn = dropDownWrapper.querySelector(".custom-select__button");
   const dropDownList = dropDownWrapper.querySelector(".custom-select__list");
-  const dropDownListItems = dropDownList.querySelectorAll(".custom-select__item.item");
+  const dropDownListItems = dropDownList.querySelectorAll(".list > .item");
   const dropDownInput = dropDownWrapper.querySelector(".custom-select__input__hidden");
 
   dropDownBtn.addEventListener("click", function () {
@@ -23,7 +23,6 @@ document.querySelectorAll(".dropdown").forEach(function (dropDownWrapper) {
 
   document.addEventListener("click", function (e) {
     if (e.target !== dropDownBtn) {
-      document;
       dropDownList.classList.remove("custom-select__list-visible");
     }
   });
@@ -35,3 +34,4 @@ document.querySelectorAll(".dropdown").forEach(function (dropDownWrapper) {
     }
   });
 });
+
