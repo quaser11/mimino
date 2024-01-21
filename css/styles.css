@@ -97,17 +97,34 @@ ul ::marker {
   cursor: pointer;
 }
 
-.mobile-menu-button .close-menu-button-icon {
+.close-menu-button-icon {
   opacity: 0;
+}
+.menu-button-icon {
+  opacity: 1;
+}
+.is-burger-menu-open {
+  .close-menu-button-icon {
+    opacity: 1;
+  }
+}
+.is-burger-menu-open {
+  .menu-button-icon {
+    opacity: 0;
+  }
 }
 
-.mobile-menu-button.is-open .close-menu-button-icon {
-  opacity: 0;
-}
-
-.mobile-menu-button.is-open .menu-button-icon {
-  opacity: 0;
-}
+/* .mobile-menu-button .close-menu-button-icon { */
+/*   opacity: 0; */
+/* } */
+/**/
+/* .mobile-menu-button.is-open .close-menu-button-icon { */
+/*   opacity: 0; */
+/* } */
+/**/
+/* .mobile-menu-button.is-open .menu-button-icon { */
+/*   opacity: 0; */
+/* } */
 
 .menu-button-icon {
   position: absolute;
@@ -137,14 +154,14 @@ ul ::marker {
   top: 100%;
   background-color: var(--dark-color);
   width: 100%;
-  height: 734px;
-  padding-top: 128px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* height: 734px; */
+  /* padding-top: 128px; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
 }
 
 .mobile-menu__list {
-  margin-bottom: 426px;
+  /* margin-bottom: 426px; */
 }
 .mobile-menu__list .mobile-menu__list__link {
   text-decoration: none;
@@ -211,7 +228,6 @@ ul ::marker {
 
 .first__section {
   background-color: var(--dark-color);
- 
 }
 
 .first__section__image {
@@ -229,12 +245,12 @@ ul ::marker {
   padding-bottom: 40px;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .first__section__container {
     background-image: url(../images/header-mobile-image.jpg);
-  background-size: 335px 439px;
-  background-repeat: no-repeat;
-  background-position: 20px 40px;
+    background-size: 335px 439px;
+    background-repeat: no-repeat;
+    background-position: 20px 40px;
   }
 }
 
@@ -297,18 +313,18 @@ ul ::marker {
 
 /* second section */
 
-.second__section__container{
-  padding-left:20px;
-  padding-right:20px;
+.second__section__container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.second__main__image{
+.second__main__image {
   position: relative;
 }
 
-.second__main__image .item:nth-child(1){
-  width:335px;
-  height:442px;
+.second__main__image .item:nth-child(1) {
+  width: 335px;
+  height: 442px;
 }
 /* ======================================================hotel page=============================================================================== */
 
@@ -611,4 +627,16 @@ ul ::marker {
   line-height: 1.5;
   letter-spacing: 0.18em;
   color: var(--modal-text);
+}
+
+.list-container {
+}
+
+.icon-container {
+  margin-top: 100px;
+  padding-left: 20px;
+}
+.js-menu-container {
+  height: 100vh;
+  padding: 128px 0px 24px 0px;
 }

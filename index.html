@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,12 +11,17 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/body-scroll-lock"></script>
     <title>MIMINO</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header__container">
-        <button type="button" class="mobile-menu-button js-open-menu">
+        <button
+          type="button"
+          class="mobile-menu-button toggle-burger-menu-button"
+        >
           <img
             src="./images/mobile-menu-button.svg"
             alt="mobile menu button"
@@ -30,41 +35,46 @@
           />
         </button>
         <div class="mobile-menu js-menu-container">
-          <ul class="mobile-menu__list">
-            <li class="item">
-              <a href="./index.html" class="mobile-menu__list__link">HOME</a>
-            </li>
-            <li class="item">
-              <a href="./hotel.html" class="mobile-menu__list__link">HOTEL</a>
-            </li>
-            <li class="item">
-              <a href="./restaurant.html" class="mobile-menu__list__link"
-                >RESTAURANT</a
-              >
-          </ul>
-          <ul class="mobile-menu-icon__list list">
-            <li>
-              <a href="">
-                <svg width="24px" height="24px">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg width="24px" height="24px">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg width="24px" height="24px">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="list-container">
+            <ul class="mobile-menu__list">
+              <li class="item">
+                <a href="./index.html" class="mobile-menu__list__link">HOME</a>
+              </li>
+              <li class="item">
+                <a href="./hotel.html" class="mobile-menu__list__link">HOTEL</a>
+              </li>
+              <li class="item">
+                <a href="./restaurant.html" class="mobile-menu__list__link"
+                  >RESTAURANT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="icon-container">
+            <ul class="mobile-menu-icon__list list">
+              <li>
+                <a href="">
+                  <svg width="24px" height="24px">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg width="24px" height="24px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg width="24px" height="24px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <nav class="main-page-nav">
           <ul class="header__nav__list list">
@@ -333,10 +343,11 @@
     </section>
     <section class="section seventh__section">
       <div class="seventh__section__container">
-        <a href=""
-          ><div class="map">
-            <p><img src="./images/map.jpg" alt="map" /></p></div
-        ></a>
+        <a href="">
+          <div class="map">
+            <p><img src="./images/map.jpg" alt="map" /></p>
+          </div>
+        </a>
         <div class="seventh__section__info">
           <h1 class="seventh__section__title">LOCATION</h1>
 
@@ -481,10 +492,10 @@
         </form>
       </div>
     </div>
-    <script src="./js/custom-select.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/price-modal.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
+  <script src="./js/custom-select.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/price-modal.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
