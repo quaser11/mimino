@@ -14,21 +14,35 @@
     <title>MIMINO</title>
   </head>
   <body>
-    <section class="first__section">
-      <header class="header">
-        <div class="header__container">
-          <nav>
-            <ul class="header__nav__list list">
-              <li class="item"><a href="./index.html" class="nav__header__link active">HOME</a></li>
-              <li class="item"><a href="./hotel.html" class="nav__header__link">HOTEL</a></li>
-              <li class="item"><a href="./restaurant.html" class="nav__header__link">RESTAURANT</a></li>
-            </ul>
-          </nav>
-          <div class="header__title">
-            <h1 class="header__title__name">MIMINO</h1>
-            <p class="header__title__text">RESTAURANT-HOTEL COMPLEX</p>
-          </div>
-          <ul class="header__social__list list">
+    <header class="header">
+      <div class="header__container">
+        <button type="button" class="mobile-menu-button js-open-menu">
+          <img
+            src="./images/mobile-menu-button.svg"
+            alt="mobile menu button"
+            class="menu-button-icon"
+            aria-expanded="false"
+          />
+          <img
+            src="./images/x-close.svg"
+            alt="close button"
+            class="close-menu-button-icon"
+          />
+        </button>
+        <div class="mobile-menu js-menu-container">
+          <ul class="mobile-menu__list">
+            <li class="item">
+              <a href="./index.html" class="mobile-menu__list__link">HOME</a>
+            </li>
+            <li class="item">
+              <a href="./hotel.html" class="mobile-menu__list__link">HOTEL</a>
+            </li>
+            <li class="item">
+              <a href="./restaurant.html" class="mobile-menu__list__link"
+                >RESTAURANT</a
+              >
+          </ul>
+          <ul class="mobile-menu-icon__list list">
             <li>
               <a href="">
                 <svg width="24px" height="24px">
@@ -52,11 +66,72 @@
             </li>
           </ul>
         </div>
-      </header>
+        <nav class="main-page-nav">
+          <ul class="header__nav__list list">
+            <li class="item">
+              <a href="./index.html" class="nav__header__link active">HOME</a>
+            </li>
+            <li class="item">
+              <a href="./hotel.html" class="nav__header__link">HOTEL</a>
+            </li>
+            <li class="item">
+              <a href="./restaurant.html" class="nav__header__link"
+                >RESTAURANT</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__title">
+          <h1 class="header__title__name">MIMINO</h1>
+          <p class="header__title__text">RESTAURANT-HOTEL COMPLEX</p>
+        </div>
+        <ul class="header__social__list list">
+          <li>
+            <a href="">
+              <svg width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="24px" height="24px">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="first__section">
       <div class="first__section__container">
         <h1 class="first__section__title">MIMINO</h1>
         <div class="first__section__items">
           <div class="first__section__info">
+            <div>
+              <ul class="first__section__buttons list">
+                <li>
+                  <button
+                    type="button"
+                    class="item open-modal-button"
+                    data-modal-id="bookModal"
+                  >
+                    BOOK A ROOM
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="item">BOOK A TABLE</button>
+                </li>
+              </ul>
+            </div>
             <div>
               <ul class="first__section__texts li">
                 <li>
@@ -71,16 +146,6 @@
                     At Hotel Mimino, we believe that great food should be
                     available to everyone, no matter the time of day.
                   </p>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="first__section__buttons list">
-                <li>
-                  <button type="button" class="item">BOOK A ROOM</button>
-                </li>
-                <li>
-                  <button type="button" class="item">BOOK A TABLE</button>
                 </li>
               </ul>
             </div>
@@ -228,10 +293,18 @@
           </div>
           <ul class="sixth__section__buttons list">
             <li class="item">
-              <button type="button">BOOK A ROOM</button>
+              <button
+                type="button "
+                class="open-modal-button"
+                data-modal-id="bookModal"
+              >
+                BOOK A ROOM
+              </button>
             </li>
             <li class="item">
-              <button type="button">VIEW ROOMS</button>
+              <button type="button">
+                <a href="./hotel.html" class="hotel-link">VIEW ROOMS</a>
+              </button>
             </li>
           </ul>
         </div>
@@ -241,15 +314,15 @@
               <img src="./images/sixth-section-first-image.jpg" alt="" />
             </div>
             <div class="sixth__section__second__image">
-              <img src="./images/sixth-section-fourth-image.jpg" alt="" />
+              <img src="./images/sixth-section-second-image.jpg" alt="" />
             </div>
           </div>
           <div class="sixth__section__images__second__block">
-            <img src="./images/sixth-section-second-image.jpg" alt="" />
+            <img src="./images/sixth-section-third-image.jpg" alt="" />
           </div>
           <div class="sixth__section_images__third__block">
             <div class="sixth__section__fourth__image">
-              <img src="./images/sixth-section-third-image.jpg" alt="" />
+              <img src="./images/sixth-section-fourth-image.jpg" alt="" />
             </div>
             <div class="sixth__section__fifth__image">
               <img src="./images/sixth-section-fifth-image.jpg" alt="" />
@@ -285,9 +358,17 @@
       <div class="footer__container">
         <nav>
           <ul class="footer__nav__list list">
-            <li class="item"><a href="./index.html" class="footer__nav__link">HOME</a></li>
-            <li class="item"><a href="./hotel.html" class="footer__nav__link">HOTEL</a></li>
-            <li class="item"><a href="./restaurant.html" class="footer__nav__link">RESTAURANT</a></li>
+            <li class="item">
+              <a href="./index.html" class="footer__nav__link">HOME</a>
+            </li>
+            <li class="item">
+              <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+            </li>
+            <li class="item">
+              <a href="./restaurant.html" class="footer__nav__link"
+                >RESTAURANT</a
+              >
+            </li>
           </ul>
         </nav>
         <div class="footer__title">
@@ -297,22 +378,113 @@
         <ul class="footer__social__list list">
           <li class="item">
             <a href="">
-              <img src="./images/dark-instagram.svg" alt="instagram">
+              <img src="./images/dark-instagram.svg" alt="instagram" />
             </a>
           </li>
           <li class="item">
             <a href="">
-              <img src="./images/dark-facebook.svg" alt="facebook">
+              <img src="./images/dark-facebook.svg" alt="facebook" />
             </a>
           </li>
           <li class="item">
             <a href="">
-              <img src="./images/dark-twitter.svg" alt="twitter">
+              <img src="./images/dark-twitter.svg" alt="twitter" />
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden"></div>
+    <div class="modal" id="bookModal">
+      <div class="book-modal">
+        <h2 class="book-modal__title">BOOK A ROOM</h2>
+        <button
+          type="button"
+          class="book-modal__exit__button"
+          data-modal-id="bookModal"
+        >
+          <svg width="32px" height="32px">
+            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+          </svg>
+        </button>
+        <form class="book-modal__form">
+          <label class="field">
+            <input
+              type="name"
+              name="user-name"
+              class="book-modal__form__input"
+              placeholder="YOUR NAME"
+            />
+            <span class="book-modal__form__name__text"
+              >WHO SHOULD BOOK A ROOM FOR?</span
+            >
+          </label>
+
+          <label class="field">
+            <input
+              type="tel"
+              name="tel"
+              class="book-modal__form__input"
+              placeholder="+38 ()"
+              maxlength="13"
+            />
+            <span class="book-modal__form__name__text">PHONE NUMBER</span>
+          </label>
+
+          <label class="field date-field">
+            <input
+              type="date"
+              name="check-in date"
+              class="book-modal__form__input__date"
+              placeholder="TODAY"
+            />
+            <span class="book-modal__form__name__text">CHECK-IN DATE</span>
+          </label>
+
+          <label class="field">
+            <input
+              type="date"
+              name="check-out date"
+              class="book-modal__form__input__date"
+              placeholder="YOUR NAME"
+            />
+            <span class="book-modal__form__name__text">CHECK-OUT DATE</span>
+          </label>
+
+          <div class="custom-select">
+            <div class="dropdown">
+              <button type="button" class="custom-select__button">
+                DOUBLE LUXURY ROOM
+              </button>
+              <p class="custom-select__text">NUMBER CATEGORY</p>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="custom-select__input__hidden"
+              />
+              <ul class="custom-select__list list">
+                <li class="item" data-value="double-luxury-room">
+                  DOUBLE LUXURY ROOM
+                </li>
+                <li class="item" data-value="triple-room">TRIPLE ROOM</li>
+                <li class="item" data-value="four-seater-room">
+                  FOUR-SEATER ROOM
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button type="submit" class="book-modal__submit__button">
+            MAKE A RESERVATION
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/custom-select.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/price-modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
