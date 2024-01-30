@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,63 +18,65 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <button
-          type="button"
-          class="mobile-menu-button toggle-burger-menu-button"
-        >
-          <img
-            src="./images/mobile-menu-button.svg"
-            alt="mobile menu button"
-            class="menu-button-icon"
-            aria-expanded="false"
-          />
-          <img
-            src="./images/x-close.svg"
-            alt="close button"
-            class="close-menu-button-icon"
-          />
-        </button>
-        <div class="mobile-menu js-menu-container">
-          <div class="list-container">
-            <ul class="mobile-menu__list">
-              <li class="item">
-                <a href="./index.html" class="mobile-menu__list__link">HOME</a>
-              </li>
-              <li class="item">
-                <a href="./hotel.html" class="mobile-menu__list__link">HOTEL</a>
-              </li>
-              <li class="item">
-                <a href="./restaurant.html" class="mobile-menu__list__link"
-                  >RESTAURANT</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="icon-container">
-            <ul class="mobile-menu-icon__list list">
-              <li>
-                <a href="">
-                  <svg width="24px" height="24px">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg width="24px" height="24px">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg width="24px" height="24px">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="mobile-burger">
+          <button
+            type="button"
+            class="mobile-menu-button toggle-burger-menu-button"
+          >
+            <img
+              src="./images/mobile-menu-button.svg"
+              alt="mobile menu button"
+              class="menu-button-icon"
+              aria-expanded="false"
+            />
+            <img
+              src="./images/x-close.svg"
+              alt="close button"
+              class="close-menu-button-icon"
+            />
+          </button>
+          <div class="mobile-menu js-menu-container">
+            <div class="list-container">
+              <ul class="mobile-menu__list">
+                <li class="item">
+                  <a href="./index.html" class="mobile-menu__list__link">HOME</a>
+                </li>
+                <li class="item">
+                  <a href="./hotel.html" class="mobile-menu__list__link">HOTEL</a>
+                </li>
+                <li class="item">
+                  <a href="./restaurant.html" class="mobile-menu__list__link"
+                    >RESTAURANT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="icon-container">
+              <ul class="mobile-menu-icon__list list">
+                <li>
+                  <a href="">
+                    <svg width="24px" height="24px">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="24px" height="24px">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <svg width="24px" height="24px">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
         </div>
         <nav class="main-page-nav">
           <ul class="header__nav__list list">
@@ -165,12 +167,64 @@
     </section>
     <section class="section second__section">
       <div class="second__section__container">
-        <ul class="second__main__image list">
-          <li class="item"><img src="./images/chairs.jpg" alt="chairs" /></li>
+        <ul class="second__main__images list">
           <li class="item">
-            <img src="./images/second-sec-bathroom.jpg" alt="bathroom" />
+            <picture>
+              <source
+                srcset="
+                  ./images/mobile-chairs1x.jpg 1x,
+                  ./images/mobile-chairs2x.jpg 2x,
+                  ./images/mobile-chairs3x.jpg 3x
+                "
+                media="(max-width:767px)"
+              />
+
+              <source
+                srcset="
+                  ./images/chairs1x.jpg 1x,
+                  ./images/chairs2x.jpg 2x,
+                  ./images/chairs3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img src="./images/chairs1x.jpg" alt="chairs" />
+            </picture>
           </li>
-          <li class="item"><img src="./images/reviews.jpg" alt="review" /></li>
+          <li class="item">
+            <picture>
+              <source
+                srcset="
+                  ./images/second-section-mobile-bathroom1x.jpg 1x,
+                  ./images/second-section-mobile-bathroom2x.jpg 2x,
+                  ./images/second-section-mobile-bathroom3x.jpg 3x
+                "
+                media="(max-width:767px)"
+              />
+
+              <source
+                srcset="
+                  ./images/second-sec-bathroom2x.jpg 2x,
+                  ./images/second-sec-bathroom3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img src="./images/second-sec-bathroom2x.jpg" alt="bathroom" />
+            </picture>
+          </li>
+          <li class="item">
+            <div class="first-review-block">
+              <div class="first-review__icon">
+                <img src="./images/first-review.svg" alt="review" />
+              </div>
+              <div class="first-review-block__info">
+                <p class="first-review__name">Maria</p>
+                <p class="first-review__rate">
+                  give rating
+                  <span class="first-review__rate__number">4.5</span>
+                </p>
+              </div>
+            </div>
+          </li>
         </ul>
 
         <div class="second__section__info">
@@ -195,29 +249,76 @@
     <section class="section third__section">
       <div class="third__section__container">
         <div class="third__section__first__image">
-          <img src="./images/third-section-chairs.jpg" alt="chairs" />
+          <picture>
+            <source
+              srcset="
+                ./images/third-section-table-mobile1x.jpg 1x,
+                ./images/third-section-table-mobile2x.jpg 2x,
+                ./images/third-section-table-mobile3x.jpg 3x
+              "
+              media="(max-width:767px)"
+            />
+
+            <source
+              srcset="
+                ./images/third-section-table1x.jpg 1x
+                ./images/third-section-table2x.jpg 2x,
+                ./images/third-section-table3x.jpg 3x
+              "
+              media="(min-width:767px)"
+            />
+            <img src="third-section-table1x.jpg" alt="tables" />
+          </picture>
         </div>
-        <div class="third__section__info">
-          <h1 class="third__section__title">BUSINESS CLASS HOTEL</h1>
-          <p class="third__section__text">
-            The Mimino hotel features spacious and stylish double luxury rooms
-            with modern amenities for a comfortable stay.
-          </p>
-        </div>
-        <div class="thirst__section__second__image">
-          <img
-            src="./images/third-section-table.jpg"
-            alt="tables"
-            class="tables"
-          />
+        <div class="third__section__tablet__info">
+          <div class="third__section__info">
+            <h1 class="third__section__title">BUSINESS CLASS HOTEL</h1>
+            <p class="third__section__text">
+              The Mimino hotel features spacious and stylish double luxury rooms
+              with modern amenities for a comfortable stay.
+            </p>
+          </div>
+          <div class="thirst__section__second__image">
+            <picture>
+              <source
+                srcset="
+                  ./images/third-section-table-mobile1x.jpg 1x,
+                  ./images/third-section-table-mobile2x.jpg 2x,
+                  ./images/third-section-table-mobile3x.jpg 3x
+                "
+                media="(max-width:767px)"
+              />
+
+              <source
+                srcset="
+                  ./images/third-section-table1x.jpg 1x
+                  ./images/third-section-table2x.jpg 2x,
+                  ./images/third-section-table3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img src="third-section-table1x.jpg" alt="tables" />
+            </picture>
+          </div>
         </div>
         <div class="third__section__review">
-          <img src="./images/third-section-review.jpg" alt="second review" />
+          <div class="second-review-block">
+            <div class="second-review__icon">
+              <img src="./images/second-review.svg" alt="review" />
+            </div>
+            <div class="second-review-block__info">
+              <p class="second-review__name">Alexander</p>
+              <p class="second-review__rate">
+                give rating
+                <span class="second-review__rate__number">5.5</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="section fourth__section">
-      <div class="container">
+      <div class="container fourth__section__container">
         <div class="fourth__section__items">
           <div class="fourth__section__info">
             <h1 class="fourth__section__title">RESTAURANT</h1>
@@ -235,19 +336,96 @@
         </div>
         <ul class="fourth__section__list__images list">
           <li class="item">
-            <img src="./images/fourth-section-image1.jpg" alt="first dishes" />
+            <picture>
+              <source
+                srcset="
+                  ./images/fourth-section-image-mobile1x.jpg 1x,
+                  ./images/fourth-section-image-mobile2x.jpg 2x,
+                  ./images/fourth-section-image-mobile3x.jpg 3x
+                "
+                media="(max-width:767px)"
+              />
+
+              <source
+                srcset="
+                  ./images/fourth-section-image1-1x.jpg 1x,
+                  ./images/fourth-section-image1-2x.jpg 2x,
+                  ./images/fourth-section-image1-3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img src="third-section-table1x.jpg" alt="first dishes" />
+            </picture>
           </li>
           <li class="item">
-            <img src="./images/fourth-section-image2.jpg" alt="second dishes" />
+            <picture>
+              <source
+                srcset="
+                  ./images/fourth-section-image2-1x.jpg 1x,
+                  ./images/fourth-section-image2-2x.jpg 2x,
+                  ./images/fourth-section-image2-3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img
+                src="./images/fourth-section-image2-1x.jpg"
+                alt="second dishes"
+              />
+            </picture>
           </li>
           <li class="item">
-            <img src="./images/fourth-section-image3.jpg" alt="third dishes" />
+            <picture>
+              <source
+                srcset="
+                  ./images/fourth-section-image3-1x.jpg 1x,
+                  ./images/fourth-section-image3-2x.jpg 2x,
+                  ./images/fourth-section-image3-3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img
+                src="./images/fourth-section-image3-1x.jpg"
+                alt="third dishes"
+              />
+            </picture>
           </li>
           <li class="item">
-            <img src="./images/image-of-chef.jpg" alt="fourth dishes" />
+            <picture>
+              <source
+                srcset="
+                  ./images/image-of-chef-mobile1x.jpg 1x,
+                  ./images/image-of-chef-mobile2x.jpg 2x,
+                  ./images/image-of-chef-mobile3x.jpg 3x
+                "
+                media="(max-width:767px)"
+              />
+
+              <source
+                srcset="
+                  ./images/image-of-chef1x.jpg 1x,
+                  ./images/image-of-chef2x.jpg 2x,
+                  ./images/image-of-chef3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img src="./images/image-of-chef1x.jpg" alt="image of chef" />
+            </picture>
           </li>
           <li class="item">
-            <img src="./images/fourth-section-image5.jpg" alt="fifth dishes" />
+            <picture>
+              <source
+                srcset="
+                  ./images/fourth-section-image5-1x.jpg 1x,
+                  ./images/fourth-section-image5-2x.jpg 2x,
+                  ./images/fourth-section-image5-3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img
+                src="./images/fourth-section-image5-1x.jpg"
+                alt="fifth dishes"
+              />
+            </picture>
           </li>
         </ul>
         <div class="fourth__section__arrows__buttons">
@@ -262,44 +440,163 @@
             </svg>
           </button>
         </div>
+        <ul class="fourth__section__mobile__buttons list">
+          <li class="item">
+            <button type="button">BOOK A TABLE</button>
+          </li>
+          <li class="item"><button type="button">VIEW THE MENU</button></li>
+        </ul>
       </div>
     </section>
     <section class="section fifth__section">
       <div class="container">
         <div class="fifth__section__items">
           <div class="fifth__section__image">
-            <img src="./images/epitome.jpg" alt="epitome" />
+            <picture>
+              <source
+                srcset="
+                  ./images/epitome1x.jpg 1x,
+                  ./images/epitome2x.jpg 2x,
+                  ./images/epitome3x.jpg 3x
+                "
+                media="(min-width:767px)"
+              />
+              <img src="./images/epitome1x.jpg" alt="epitome" />
+            </picture>
           </div>
           <div class="fifth__section__info">
             <h1 class="fifth__section__title">
               Welcome to the epitome of luxury and comfort
             </h1>
-            <p class="fifth__section__first__text">
-              Our hotel rooms are elegantly designed with an eye for detail,
-              ensuring that you have everything you need for a relaxing and
-              rejuvenating stay.
-            </p>
-            <p class="fifth__section__second__text">
-              Each room is equipped with the latest amenities, including plush
-              bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker to
-              help you start your day right. Our spacious bathrooms feature
-              luxurious toiletries and towels, so you can pamper yourself in
-              complete privacy.
-            </p>
+            <div class="fifth__section__texts">
+              <p class="fifth__section__first__text">
+                Our hotel rooms are elegantly designed with an eye for detail,
+                ensuring that you have everything you need for a relaxing and
+                rejuvenating stay.
+              </p>
+              <p class="fifth__section__second__text">
+                Each room is equipped with the latest amenities, including plush
+                bedding, high-speed Wi-Fi, flat-screen TVs, and a coffee maker
+                to help you start your day right. Our spacious bathrooms feature
+                luxurious toiletries and towels, so you can pamper yourself in
+                complete privacy.
+              </p>
+            </div>
+          </div>
+          <div class="fifth__section__mobile__image">
+            <picture>
+              <source
+                srcset="
+                  ./images/epitome-mobile1x.jpg 1x,
+                  ./images/epitome-mobile2x.jpg 2x,
+                  ./images/epitome-mobile3x.jpg 3x
+                "
+                media="(max-width:767px)"
+              />
+              <img src="./images/epitome-mobile1x.jpg" alt="epitome" />
+            </picture>
           </div>
         </div>
       </div>
     </section>
     <section class="section sixth__section">
-      <div class="container">
-        <div class="sixth__section__info">
-          <div class="sixth__section__items">
-            <h1 class="sixth__section__title">HOTEL</h1>
-            <p class="sixth__section__text">
-              Book your stay with us now and experience the epitome of comfort
-              and luxury at our hotel. We guarantee you'll be thrilled with your
-              decision.
-            </p>
+      <div class="container sixth__section__container">
+        <div class="sixth-section__dekstop__tablet__infos">
+          <div class="sixth__section__info">
+            <div class="sixth__section__items">
+              <h1 class="sixth__section__title">HOTEL</h1>
+              <p class="sixth__section__text">
+                Book your stay with us now and experience the epitome of comfort
+                and luxury at our hotel. We guarantee you'll be thrilled with
+                your decision.
+              </p>
+            </div>
+          </div>
+          <div class="sixth__section__images">
+            <div class="sixth__section__images__first__block">
+              <div class="sixth__section__first__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sixth-section-first-image1x.jpg 1x,
+                      ./images/sixth-section-first-image2x.jpg 2x,
+                      ./images/sixth-section-first-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/sixth-section-first-image1x.jpg"
+                    alt="bathroom items"
+                  />
+                </picture>
+              </div>
+              <div class="sixth__section__second__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sixth-section-second-tablet-image1x.jpg 1x,
+                      ./images/sixth-section-second-tablet-image2x.jpg 2x,
+                      ./images/sixth-section-second-tablet-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/sixth-section-second-tablet-image1x.jpg"
+                    alt="bathroom"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="sixth__section__images__second__block">
+              <picture>
+                <source
+                  srcset="
+                    ./images/sixth-section-third-image1x.jpg 1x,
+                    ./images/sixth-section-third-image2x.jpg 2x,
+                    ./images/sixth-section-third-image3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/sixth-section-third-image1x.jpg"
+                  alt="beds"
+                />
+              </picture>
+            </div>
+            <div class="sixth__section_images__third__block">
+              <div class="sixth__section__fourth__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sixth-section-fourth-tablet-image1x.jpg 1x,
+                      ./images/sixth-section-fourth-tablet-image2x.jpg 2x,
+                      ./images/sixth-section-fourth-tablet-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/sixth-section-tablet-image1x.jpg"
+                    alt="bathroom"
+                  />
+                </picture>
+              </div>
+              <div class="sixth__section__fifth__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sixth-section-fifth-image1x.jpg 1x,
+                      ./images/sixth-section-fifth-image2x.jpg 2x,
+                      ./images/sixth-section-fifth-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/sixth-section-fifth-image1x.jpg"
+                    alt="bathroom"
+                  />
+                </picture>
+              </div>
+            </div>
           </div>
           <ul class="sixth__section__buttons list">
             <li class="item">
@@ -318,26 +615,101 @@
             </li>
           </ul>
         </div>
-        <div class="sixth__section__images">
-          <div class="sixth__section__images__first__block">
-            <div class="sixth__section__first__image">
-              <img src="./images/sixth-section-first-image.jpg" alt="" />
+        <div class="sixth__section__mobile__items">
+          <div class="sixth-section__mobile__info">
+            <h1 class="sixth__section__mobile__title">HOTEL</h1>
+            <p class="sixth__section__text">
+              Book your stay with us now and experience the epitome of comfort
+              and luxury at our hotel. We guarantee you'll be thrilled with your
+              decision.
+            </p>
+          </div>
+
+          <div class="sixth__section__mobile__images">
+            <div class="sixth__section__mobile__images__first__image">
+              <picture>
+                <source
+                  srcset="
+                    ./images/sixth-section-third-image-mobile1x.jpg 1x,
+                    ./images/sixth-section-third-image-mobile2x.jpg 2x,
+                    ./images/sixth-section-third-image-mobile3x.jpg 3x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/sixth-section-third-image-mobile1x.jpg"
+                  alt="beds"
+                />
+              </picture>
             </div>
-            <div class="sixth__section__second__image">
-              <img src="./images/sixth-section-second-image.jpg" alt="" />
+
+            <div class="sixth__section__mobile__images__second__images">
+              <div
+                class="sixth__section__mobile__images__second__images__first__image"
+              >
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sixth-section-fifth-image1x.jpg 1x,
+                      ./images/sixth-section-fifth-image2x.jpg 2x,
+                      ./images/sixth-section-fifth-image3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./sixth-section-fifth-image1x.jpg"
+                    alt="bathroom items"
+                  />
+                </picture>
+              </div>
+              <div
+                class="sixth__section__mobile__images__second__images__second__image"
+              >
+                <picture>
+                  <source
+                    srcset="
+                      ./images/sixth-section-second-image-mobile1x.jpg 1x,
+                      ./images/sixth-section-second-image-mobile2x.jpg 2x,
+                      ./images/sixth-section-second-image-mobile3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="./images/sixth-section-second-image-mobile1x.jpg"
+                    alt="bathroom"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
-          <div class="sixth__section__images__second__block">
-            <img src="./images/sixth-section-third-image.jpg" alt="" />
+          <div class="sixth__section__mobile__arrows__buttons">
+            <button type="button" class="sixth__section__mobile__button">
+              <svg width="7px" height="14px">
+                <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="sixth__section__mobile__button">
+              <svg width="7px" height="14px">
+                <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
           </div>
-          <div class="sixth__section_images__third__block">
-            <div class="sixth__section__fourth__image">
-              <img src="./images/sixth-section-fourth-image.jpg" alt="" />
-            </div>
-            <div class="sixth__section__fifth__image">
-              <img src="./images/sixth-section-fifth-image.jpg" alt="" />
-            </div>
-          </div>
+          <ul class="sixth__section__mobile__buttons list">
+            <li class="item">
+              <button
+                type="button "
+                class="open-modal-button"
+                data-modal-id="bookModal"
+              >
+                BOOK A ROOM
+              </button>
+            </li>
+            <li class="item">
+              <button type="button">
+                <a href="./hotel.html" class="hotel-link">VIEW ROOMS</a>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -350,16 +722,40 @@
         </a>
         <div class="seventh__section__info">
           <h1 class="seventh__section__title">LOCATION</h1>
+          <div class="mobile-tablet-map">
+            <picture>
+              <source
+                srcset="
+                  ./images/map-mobile1x.jpg 1x,
+                  ./images/map-mobile2x.jpg 2x,
+                  ./images/map-mobile3x.jpg 3x
+                "
+                media="(max-width:767px)"
+              />
 
+              <source
+                srcset="
+                  ./images/tablet-map1x.jpg 1x,
+                  ./images/tablet-map2x.jpg 2x,
+                  ./images/tablet-map3x.jpg 3x
+                "
+
+                media="(min-width:768px)"
+              />
+              <img src="./images/map-mobile1x.jpg" alt="map" />
+            </picture>
+          </div>
           <address class="address">
             <div class="location">
               <p class="first__address__text">Ukraine, Poltava,</p>
               <p class="second__address__text">St. Marshal Biryuzov, 15</p>
             </div>
-            <p class="call__us">CALL US:</p>
-            <div class="numbers">
-              <a href="">(095) 555 95 33</a>
-              <a href="">(066) 849 10 89</a>
+            <div class="address__numbers">
+              <p class="call__us">CALL US:</p>
+              <div class="numbers">
+                <a href="">(095) 555 95 33</a>
+                <a href="">(066) 849 10 89</a>
+              </div>
             </div>
           </address>
         </div>
@@ -382,27 +778,29 @@
             </li>
           </ul>
         </nav>
-        <div class="footer__title">
-          <h1 class="footer__title__name">MIMINO</h1>
-          <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+        <div class="mobile-footer-items">
+          <div class="footer__title">
+            <h1 class="footer__title__name">MIMINO</h1>
+            <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+          </div>
+          <ul class="footer__social__list list">
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-twitter.svg" alt="twitter" />
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="footer__social__list list">
-          <li class="item">
-            <a href="">
-              <img src="./images/dark-instagram.svg" alt="instagram" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              <img src="./images/dark-facebook.svg" alt="facebook" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              <img src="./images/dark-twitter.svg" alt="twitter" />
-            </a>
-          </li>
-        </ul>
       </div>
     </footer>
     <div class="backdrop is-hidden"></div>

@@ -347,6 +347,7 @@
     display: flex;
     gap: 14px;
   }
+  
   .fourth__section__buttons .item button {
     font-family: inherit;
     font-weight: 400;
