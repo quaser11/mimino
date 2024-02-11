@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -528,6 +528,22 @@
                 your decision.
               </p>
             </div>
+            <ul class="sixth__section__desktop__buttons list">
+              <li class="item">
+                <button
+                  type="button "
+                  class="open-modal-button"
+                  data-modal-id="bookModal"
+                >
+                  BOOK A ROOM
+                </button>
+              </li>
+              <li class="item">
+                <button type="button">
+                  <a href="./hotel.html" class="hotel-link">VIEW ROOMS</a>
+                </button>
+              </li>
+            </ul>
           </div>
           <div class="sixth__section__images">
             <div class="sixth__section__images__first__block">
@@ -555,7 +571,16 @@
                       ./images/sixth-section-second-tablet-image2x.jpg 2x,
                       ./images/sixth-section-second-tablet-image3x.jpg 3x
                     "
-                    media="(min-width:768px)"
+                    media="(min-width:768px and max-width:1024px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/sixth-section-second-image1x.jpg 1x,
+                      ./images/sixth-section-second-image2x.jpg 2x,
+                      ./images/sixth-section-second-image3x.jpg 3x
+                    "
+                    media="(min-width:1024px)"
                   />
                   <img
                     src="./images/sixth-section-second-tablet-image1x.jpg"
@@ -589,10 +614,20 @@
                       ./images/sixth-section-fourth-tablet-image2x.jpg 2x,
                       ./images/sixth-section-fourth-tablet-image3x.jpg 3x
                     "
-                    media="(min-width:768px)"
+                    media="(min-width:768px and max-width:1024px)"
                   />
+
+                  <source
+                    srcset="
+                      ./images/sixth-section-fourth-image1x.jpg 1x,
+                      ./images/sixth-section-fourth-image2x.jpg 2x,
+                      ./images/sixth-section-fourth-image3x.jpg 3x
+                    "
+                    media="(min-width:1024px)"
+                  />
+
                   <img
-                    src="./images/sixth-section-tablet-image1x.jpg"
+                    src="./images/sixth-section-fourth-tablet-image1x.jpg"
                     alt="bathroom"
                   />
                 </picture>
@@ -615,7 +650,7 @@
               </div>
             </div>
           </div>
-          <ul class="sixth__section__buttons list">
+          <ul class="sixth__section__mobile__tablet__buttons list">
             <li class="item">
               <button
                 type="button "
@@ -651,7 +686,7 @@
                     ./images/sixth-section-third-image-mobile2x.jpg 2x,
                     ./images/sixth-section-third-image-mobile3x.jpg 3x
                   "
-                  media="(max-width:767px)"
+                  media="(max-width:1024px)"
                 />
                 <img
                   src="./images/sixth-section-third-image-mobile1x.jpg"
@@ -671,7 +706,7 @@
                       ./images/sixth-section-fifth-image2x.jpg 2x,
                       ./images/sixth-section-fifth-image3x.jpg 3x
                     "
-                    media="(max-width:767px)"
+                    media="(max-width:1024px)"
                   />
                   <img
                     src="./sixth-section-fifth-image1x.jpg"
@@ -689,7 +724,7 @@
                       ./images/sixth-section-second-image-mobile2x.jpg 2x,
                       ./images/sixth-section-second-image-mobile3x.jpg 3x
                     "
-                    media="(max-width:767px)"
+                    media="(max-width:1024px)"
                   />
                   <img
                     src="./images/sixth-section-second-image-mobile1x.jpg"
@@ -734,7 +769,17 @@
       <div class="seventh__section__container">
         <a href="">
           <div class="map">
-            <p><img src="./images/map.jpg" alt="map" /></p>
+            <picture>
+              <source
+                srcset="
+                  ./images/map1x.jpg 1x,
+                  ./images/map2x.jpg 2x,
+                  ./images/map3x.jpg 3x
+                "
+                media="(min-width:1024px)"
+              />
+              <img src="./images/map1x.jpg" alt="map" />
+            </picture>
           </div>
         </a>
         <div class="seventh__section__info">
@@ -779,21 +824,44 @@
     </section>
     <footer class="section footer">
       <div class="footer__container">
-        <nav>
-          <ul class="footer__nav__list list">
+        <div class="footer__desktop__items">
+          <nav>
+            <ul class="footer__nav__list list">
+              <li class="item">
+                <a href="./index.html" class="footer__nav__link">HOME</a>
+              </li>
+              <li class="item">
+                <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+              </li>
+              <li class="item">
+                <a href="./restaurant.html" class="footer__nav__link"
+                  >RESTAURANT</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__title">
+            <h1 class="footer__title__name">MIMINO</h1>
+            <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+          </div>
+          <ul class="footer__social__list list">
             <li class="item">
-              <a href="./index.html" class="footer__nav__link">HOME</a>
+              <a href="">
+                <img src="./images/dark-instagram.svg" alt="instagram" />
+              </a>
             </li>
             <li class="item">
-              <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+              <a href="">
+                <img src="./images/dark-facebook.svg" alt="facebook" />
+              </a>
             </li>
             <li class="item">
-              <a href="./restaurant.html" class="footer__nav__link"
-                >RESTAURANT</a
-              >
+              <a href="">
+                <img src="./images/dark-twitter.svg" alt="twitter" />
+              </a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div class="mobile-footer-items">
           <div class="footer__title">
             <h1 class="footer__title__name">MIMINO</h1>
