@@ -6,16 +6,16 @@ let form = {
 };
 document.querySelectorAll(".dropdown-days").forEach(function (dropDownWrapper) {
   const customSelectDaysButton = document.querySelector(
-    ".custom-select-days__button",
+    ".custom-select-days__button"
   );
   const customSelectDaysList = document.querySelector(
-    ".custom-select-days-list",
+    ".custom-select-days-list"
   );
   const customSelectDaysItems = document.querySelectorAll(
-    ".custom-select-days-list > .custom-select-days-list__item",
+    ".custom-select-days-list > .custom-select-days-list__item"
   );
   const customSelectPriceButton = document.querySelector(
-    ".custom-select-price__button",
+    ".custom-select-price__button"
   );
 
   customSelectDaysButton.addEventListener("click", function () {

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double luxury room</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/body-scroll-lock"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="dlr__header">
+      <div class="dlr__header__container">
+        <div class="dlr-mobile-burger">
+          <button
+            type="button"
+            class="dlr-mobile-menu-button toggle-burger-menu-button"
+          >
+            <img
+              src="./images/hotel-menu-burger.svg"
+              alt="mobile menu button"
+              class="dlr-menu-button-icon"
+              aria-expanded="false"
+            />
+            <img
+              src="./images/hotel-close.svg"
+              alt="close button"
+              class="dlr-close-menu-button-icon"
+            />
+          </button>
+          <div class="dlr-mobile-menu js-menu-container">
+            <div class="dlr-list-container">
+              <ul class="dlr-mobile-menu__list">
+                <li class="item">
+                  <a href="./index.html" class="dlr-mobile-menu__list__link"
+                    >HOME</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="./hotel.html" class="dlr-mobile-menu__list__link"
+                    >HOTEL</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="./restaurant.html"
+                    class="dlr-mobile-menu__list__link"
+                    >RESTAURANT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dlr-icon-container">
+              <ul class="dlr-mobile-menu-icon__list list">
+                <li>
+                  <a href="">
+                    <img src="./images/dark-instagram.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./images/dark-facebook.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./images/dark-twitter.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="dlr-main-page-nav">
+          <ul class="dlr__header__nav__list list">
+            <li class="item">
+              <a href="./index.html" class="hotel__nav__header__link">HOME</a>
+            </li>
+            <li class="item">
+              <a href="./hotel.html" class="hotel__nav__header__link">HOTEL</a>
+            </li>
+            <li class="item">
+              <a href="./restaurant.html" class="hotel__nav__header__link"
+                >RESTAURANT</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="dlr__header__title">
+          <h1 class="dlr__header__title__name">MIMINO</h1>
+          <p class="dlr__header__title__text">RESTAURANT-HOTEL COMPLEX</p>
+        </div>
+        <ul class="dlr__header__social__list list">
+          <li>
+            <a href="">
+              <img src="./images/hotel-instagram-icon.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/hotel-facebook-icon.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/hotel-twitter-icon.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="dlr__first__section">
+      <div class="dlr__first__section__container">
+        <div class="dlr__first__section__items">
+          <div class="dlr__first__section__info">
+            <h1 class="dlr__first__section__title">DOUBLE LUXURY ROOM</h1>
+            <ul class="dlr__first__section__buttons__list list">
+              <li class="item">
+                <button
+                  type="button"
+                  class="open-modal-button"
+                  data-modal-id="priceModal"
+                >
+                  VIEW PRICES
+                </button>
+              </li>
+            </ul>
+            <div class="dlr__first__section__mobile__images">
+              <div class="dlr__first__section__first__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/dlr-mobile-first-section-first-image1x.jpg 1x,
+                      ./images/dlr-mobile-first-section-first-image2x.jpg 2x,
+                      ./images/dlr-mobile-first-section-first-image3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/dlr-tablet-first-section-first-image1x.jpg 1x,
+                      ./images/dlr-tablet-first-section-first-image2x.jpg 2x,
+                      ./images/dlr-tablet-first-section-first-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    src="./images/hotel-mobile-first-section-first-image1x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="dlr__first__section__second__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/dlr-mobile-first-section-second-image1x.jpg 1x,
+                      ./images/dlr-mobile-first-section-second-image2x.jpg 2x,
+                      ./images/dlr-mobile-first-section-second-image3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/dlr-tablet-first-section-second-image1x.jpg 1x,
+                      ./images/dlr-tablet-first-section-second-image2x.jpg 2x,
+                      ./images/dlr-tablet-first-section-second-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/dlr-mobile-first-section-second-image1x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="dlr__first__section__tablet__items">
+              <div class="dlr-mobile-arrows">
+                <div class="first-arrow-left">
+                  <button type="button">
+                    <img src="./images/arrow-left.svg" alt="arrow left" />
+                  </button>
+                </div>
+                <div class="second-arrow-right">
+                  <button type="button">
+                    <img src="./images/arrow-right.svg" alt="arrow right" />
+                  </button>
+                </div>
+              </div>
+              <p class="dlr__first__section__text">
+                The Mimino hotel features spacious and stylish double luxury
+                rooms with modern amenities for a comfortable stay.
+              </p>
+            </div>
+            <div class="dlr__desktop__first__secton__items">
+              <p class="dlr__desktop__first__secton__text">
+                The Mimino hotel features spacious and stylish double luxury
+                rooms with modern amenities for a comfortable stay.
+              </p>
+            </div>
+          </div>
+          <div class="dlr__first__section__desktop__images">
+            <div class="dlr__first__section__first__image">
+              <picture>
+                <source
+                  srcset="
+                    ./images/dlr-desktop-first-section-first-image1x.jpg 1x,
+                    ./images/dlr-desktop-first-section-first-image2x.jpg 2x,
+                    ./images/dlr-desktop-first-section-first-image3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  src="./images/dlr-desktop-first-section-first-image1x.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="dlr-desktop-arrows">
+                <div class="first-arrow-left">
+                  <button type="button">
+                    <img src="./images/arrow-left.svg" alt="arrow left" />
+                  </button>
+                </div>
+                <div class="secon-arrow-right">
+                  <button type="button">
+                    <img src="./images/arrow-right.svg" alt="arrow right" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="dlr__first__section__second__image">
+              <picture>
+                <source
+                  srcset="
+                    ./images/dlr-desktop-first-section-second-image1x.jpg 1x,
+                    ./images/dlr-desktop-first-section-second-image2x.jpg 2x,
+                    ./images/dlr-desktop-first-section-second-image3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/dlr-mobile-first-section-second-image1x.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dlr-second-section">
+      <div class="dlr-second-section__container">
+        <div class="dlr-second-section__mobile__lists">
+          <div class="dlr-second-section__first__list__block">
+            <h2 class="dlr-second-section__first__title">
+              General Amenities & Facilities:
+            </h2>
+
+            <ul class="dlr-second-section__first__list">
+              <li class="item">24-hour front desk service</li>
+              <li class="item">Daily housekeeping</li>
+              <li class="item">Free Wi-Fi throughout the hotel</li>
+              <li class="item">Elevator access</li>
+              <li class="item">Luggage storage</li>
+              <li class="item">Non-smoking rooms available</li>
+              <li class="item">Meeting rooms for business and events</li>
+              <li class="item">On-site parking (surcharge)</li>
+              <li class="item">Concierge services</li>
+            </ul>
+          </div>
+
+          <div class="dlr-second-section__second__list__block">
+            <h2 class="dlr-second-section__second__title">Bathroom:</h2>
+            <ul class="dlr-second-section__second__list">
+              <li class="item">Private bathroom with shower</li>
+              <li class="item">Complimentary toiletries</li>
+              <li class="item">Hair dryer</li>
+              <li class="item">Fresh towels daily</li>
+              <li class="item">Deluxe bathrobes (in some room categories)</li>
+            </ul>
+          </div>
+
+          <div class="dlr-second-section__third__list__block">
+            <h2 class="dlr-second-section__third__title">Bedroom:</h2>
+            <ul class="dlr-second-section__third__list">
+              <li class="item">Comfortable beds with high-quality linens</li>
+              <li class="item">Blackout curtains</li>
+              <li class="item">
+                Climate control (air conditioning and heating)
+              </li>
+              <li class="item">Safe for valuables</li>
+              <li class="item">Writing desk and chair</li>
+              <li class="item">Flat-screen TV with cable channels</li>
+            </ul>
+          </div>
+
+          <div class="dlr-second-section__fourth__list__block">
+            <h2 class="dlr-second-section__fourth__title">Kitchen:</h2>
+            <ul class="dlr-second-section__fourth__list">
+              <li class="item">
+                In-room kitchenette (in some room categories)
+              </li>
+              <li class="item">Refrigerator</li>
+              <li class="item">Microwave</li>
+              <li class="item">Electric kettle</li>
+              <li class="item">Cooking utensils and cutlery</li>
+              <li class="item">Dining table and chairs</li>
+            </ul>
+          </div>
+
+          <div class="dlr-second-section__fifth__list__block">
+            <h2 class="dlr-second-section__fifth__title">Media:</h2>
+            <ul class="dlr-second-section__fifth__list">
+              <li class="item">Flat-screen TV with cable channels</li>
+              <li class="item">High-speed Wi-Fi</li>
+              <li class="item">iPod docking station</li>
+              <li class="item">Speaker system</li>
+              <li class="item">Electrical outlets for charging devices.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dlr-second-section__desktop__lists">
+          <div class="dlr-second-setion-desktop-lists__first__block">
+            <div class="dlr-second-section__desktop__first__list__block">
+              <h2 class="dlr-second-section__desktop__first__title">
+                General Amenities & Facilities:
+              </h2>
+
+              <ul class="dlr-second-section__desktop__first__list">
+                <li class="item">24-hour front desk service</li>
+                <li class="item">Daily housekeeping</li>
+                <li class="item">Free Wi-Fi throughout the hotel</li>
+                <li class="item">Elevator access</li>
+                <li class="item">Luggage storage</li>
+                <li class="item">Non-smoking rooms available</li>
+                <li class="item">Meeting rooms for business and events</li>
+                <li class="item">On-site parking (surcharge)</li>
+                <li class="item">Concierge services</li>
+              </ul>
+            </div>
+
+            <div class="dlr-second-section__desktop__second__list__block">
+              <h2 class="dlr-second-section__desktop__second__title">
+                Bathroom:
+              </h2>
+              <ul class="dlr-second-section__desktop__second__list">
+                <li class="item">Private bathroom with shower</li>
+                <li class="item">Complimentary toiletries</li>
+                <li class="item">Hair dryer</li>
+                <li class="item">Fresh towels daily</li>
+                <li class="item">Deluxe bathrobes (in some room categories)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dlr-second-setion-desktop-lists__second__block">
+            <div class="dlr-second-section__desktop__third__list__block">
+              <h2 class="dlr-second-section__desktop__third__title">
+                Bedroom:
+              </h2>
+              <ul class="dlr-second-section__desktop__third__list">
+                <li class="item">Comfortable beds with high-quality linens</li>
+                <li class="item">Blackout curtains</li>
+                <li class="item">
+                  Climate control (air conditioning and heating)
+                </li>
+                <li class="item">Safe for valuables</li>
+                <li class="item">Writing desk and chair</li>
+                <li class="item">Flat-screen TV with cable channels</li>
+              </ul>
+            </div>
+
+            <div class="dlr-second-setion-desktop-lists__second__block">
+              <div class="dlr-second-section__desktop__fourth__list__block">
+                <h2 class="dlr-second-section__desktop__fourth__title">
+                  Kitchen:
+                </h2>
+                <ul class="dlr-second-section__desktop__fourth__list">
+                  <li class="item">
+                    In-room kitchenette (in some room categories)
+                  </li>
+                  <li class="item">Refrigerator</li>
+                  <li class="item">Microwave</li>
+                  <li class="item">Electric kettle</li>
+                  <li class="item">Cooking utensils and cutlery</li>
+                  <li class="item">Dining table and chairs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="dlr-second-setion-desktop-lists__third__block">
+            <div class="dlr-second-section__desktop__fifth__list__block">
+              <h2 class="dlr-second-section__desktop__fifth__title">Media:</h2>
+              <ul class="dlr-second-section__desktop__fifth__list">
+                <li class="item">Flat-screen TV with cable channels</li>
+                <li class="item">High-speed Wi-Fi</li>
+                <li class="item">iPod docking station</li>
+                <li class="item">Speaker system</li>
+                <li class="item">Electrical outlets for charging devices.</li>
+              </ul>
+            </div>
+
+            <div class="dlr-second-section__desktop__items">
+              <div class="dlr-second-section__button">
+                <button
+                  type="button"
+                  class="open-modal-button"
+                  data-modal-id="bookModal"
+                >
+                  BOOK A ROOM
+                </button>
+              </div>
+              <div class="dlr-second-section__desktop__items__first__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/dlr-second-section-desktop-first-image1x.jpg 1x,
+                      ./images/dlr-second-section-desktop-first-image2x.jpg 2x,
+                      ./images/dlr-second-section-desktop-first-image3x.jpg 3x
+                    "
+                  />
+                  <img
+                    src="./images/dlr-second-section-desktop-first-image1x.jpg"
+                    alt="bathroom"
+                  />
+                </picture>
+              </div>
+              <div class="dlr-second-section__desktop__items__second__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/dlr-second-section-desktop-second-image1x.jpg 1x,
+                      ./images/dlr-second-section-desktop-second-image2x.jpg 2x,
+                      ./images/dlr-second-section-desktop-second-image3x.jpg 3x
+                    "
+                  />
+                  <img
+                    src="./images/dlr-second-section-desktop-first-image1x.jpg"
+                    alt="bathroom items"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dlr-second-section__items">
+          <div class="dlr-second-section__images__block">
+            <div class="dlr-second-section__first__image">
+              <picture>
+                <source
+                  srcset="
+                    ./images/dlr-second-section-mobile-first-image1x.jpg 1x,
+                    ./images/dlr-second-section-mobile-first-image2x.jpg 2x,
+                    ./images/dlr-second-section-mobile-first-image3x.jpg 3x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/dlr-second-section-tablet-first-image1x.jpg 1x,
+                    ./images/dlr-second-section-tablet-first-image2x.jpg 2x,
+                    ./images/dlr-second-section-tablet-first-image3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/dlr-second-section-mobile-first-image1x.jpg"
+                  alt="bathroom"
+                />
+              </picture>
+            </div>
+
+            <div class="dlr-second-section__second__image">
+              <picture>
+                <source
+                  srcset="
+                    ./images/dlr-second-section-mobile-second-image1x.jpg 1x,
+                    ./images/dlr-second-section-mobile-second-image2x.jpg 2x,
+                    ./images/dlr-second-section-mobile-second-image3x.jpg 3x
+                  "
+                  media="(max-width:767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/dlr-second-section-tablet-second-image1x.jpg 1x,
+                    ./images/dlr-second-section-tablet-second-image2x.jpg 2x,
+                    ./images/dlr-second-section-tablet-second-image3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  src="./images/dlr-second-section-mobile-second-image1x.jpg"
+                  alt="bathroom items"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="dlr-second-section__mobile__button">
+            <button
+              type="button"
+              class="open-modal-button"
+              data-modal-id="bookModal"
+            >
+              BOOK A ROOM
+            </button>
+          </div>
+        </div>
+
+       
+      </div>
+    </section>
+    <footer class="footer dlr-footer-section">
+      <div class="footer__container">
+        <div class="footer__desktop__items">
+          <nav>
+            <ul class="footer__nav__list list">
+              <li class="item">
+                <a href="./index.html" class="footer__nav__link">HOME</a>
+              </li>
+              <li class="item">
+                <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+              </li>
+              <li class="item">
+                <a href="./restaurant.html" class="footer__nav__link"
+                  >RESTAURANT</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__title">
+            <h1 class="footer__title__name">MIMINO</h1>
+            <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+          </div>
+          <ul class="footer__social__list list">
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-twitter.svg" alt="twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-footer-items">
+          <div class="footer__title">
+            <h1 class="footer__title__name">MIMINO</h1>
+            <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+          </div>
+          <ul class="footer__social__list list">
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-twitter.svg" alt="twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden"></div>
+    <div class="modal" id="bookModal">
+      <div class="book-modal">
+        <h2 class="book-modal__title">BOOK A ROOM</h2>
+        <button
+          type="button"
+          class="book-modal__exit__button"
+          data-modal-id="bookModal"
+        >
+          <svg width="32px" height="32px">
+            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+          </svg>
+        </button>
+        <form class="book-modal__form">
+          <label class="field">
+            <input
+              type="name"
+              name="user-name"
+              class="book-modal__form__input"
+              placeholder="YOUR NAME"
+            />
+            <span class="book-modal__form__name__text"
+              >WHO SHOULD BOOK A ROOM FOR?</span
+            >
+          </label>
+
+          <label class="field">
+            <input
+              type="tel"
+              name="tel"
+              class="book-modal__form__input"
+              placeholder="+38 ()"
+              maxlength="13"
+            />
+            <span class="book-modal__form__name__text">PHONE NUMBER</span>
+          </label>
+
+          <label class="field date-field">
+            <input
+              type="date"
+              name="check-in date"
+              class="book-modal__form__input__date"
+              placeholder="TODAY"
+            />
+            <span class="book-modal__form__name__text">CHECK-IN DATE</span>
+          </label>
+
+          <label class="field">
+            <input
+              type="date"
+              name="check-out date"
+              class="book-modal__form__input__date"
+              placeholder="YOUR NAME"
+            />
+            <span class="book-modal__form__name__text">CHECK-OUT DATE</span>
+          </label>
+
+          <div class="custom-select">
+            <div class="dropdown">
+              <button type="button" class="custom-select__button">
+                DOUBLE LUXURY ROOM
+              </button>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="custom-select__input__hidden"
+              />
+              <ul class="custom-select__list list">
+                <li class="item" data-value="double-luxury-room">
+                  DOUBLE LUXURY ROOM
+                </li>
+                <li class="item" data-value="triple-room">TRIPLE ROOM</li>
+                <li class="item" data-value="four-seater-room">
+                  FOUR-SEATER ROOM
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button type="submit" class="book-modal__submit__button">
+            MAKE A RESERVATION
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="priceModal">
+      <div class="price-modal">
+        <button
+          type="button"
+          class="book-modal__exit__button"
+          data-modal-id="priceModal"
+        >
+          <svg width="32px" height="32px">
+            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+          </svg>
+        </button>
+        <h2 class="price-modal__title">PRICES PER ROOM</h2>
+        <form class="price-modal__form">
+          <span class="double-suite">DOUBLE SUITE</span>
+          <div class="custom-select__buttons">
+            <div class="custom-select-days">
+              <div class="dropdown-days">
+                <button
+                  type="button"
+                  class="custom-select-days__button"
+                  data-value="1"
+                >
+                  1
+                </button>
+                <p class="price-modal__form__text">NUMBER OF NIGHTS</p>
+                <input
+                  type="text"
+                  name="select-category"
+                  value=""
+                  class="custom-select__input__hidden"
+                />
+
+                <ul class="custom-select-days-list days-list">
+                  <li class="custom-select-days-list__item" data-value="1">
+                    1
+                  </li>
+                  <li class="custom-select-days-list__item" data-value="2">
+                    2
+                  </li>
+                  <li class="custom-select-days-list__item" data-value="3">
+                    3
+                  </li>
+                  <li class="custom-select-days-list__item" data-value="4">
+                    4
+                  </li>
+                  <li class="custom-select-days-list__item" data-value="5">
+                    5
+                  </li>
+                  <li class="custom-select-days-list__item" data-value="6">
+                    6
+                  </li>
+                  <li class="custom-select-days-list__item" data-value="7">
+                    7
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="price-modal__second__input">
+              <button
+                type="button"
+                class="custom-select-price__button"
+                data-value="1000"
+              >
+                1000
+              </button>
+              <p class="price-modal__form__text">UAH</p>
+            </div>
+          </div>
+          <button type="submit" class="book-modal__submit__button">
+            MAKE A RESERVATION
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./js/custom-select.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/price-modal.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</html>

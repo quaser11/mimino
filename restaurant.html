@@ -11,26 +11,100 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/body-scroll-lock"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>MIMINO</title>
   </head>
   <body>
     <header class="restaurant__header">
       <div class="restaurant__header__container">
-        <nav>
+        <div class="restaurant-mobile-burger">
+          <button
+            type="button"
+            class="restaurant-mobile-menu-button toggle-burger-menu-button"
+          >
+            <img
+              src="./images/hotel-menu-burger.svg"
+              alt="mobile menu button"
+              class="restaurant-menu-button-icon"
+              aria-expanded="false"
+            />
+            <img
+              src="./images/hotel-close.svg"
+              alt="close button"
+              class="restaurant-close-menu-button-icon"
+            />
+          </button>
+          <div class="restaurant-mobile-menu js-menu-container">
+            <div class="restaurant-list-container">
+              <ul class="restaurant-mobile-menu__list">
+                <li class="item">
+                  <a
+                    href="./index.html"
+                    class="restaurant-mobile-menu__list__link"
+                    >HOME</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="./hotel.html"
+                    class="restaurant-mobile-menu__list__link"
+                    >HOTEL</a
+                  >
+                </li>
+                <li class="item">
+                  <a
+                    href="./restaurant.html"
+                    class="restaurant-mobile-menu__list__link"
+                    >RESTAURANT</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="restaurant-icon-container">
+              <ul class="restaurant-mobile-menu-icon__list list">
+                <li>
+                  <a href="">
+                    <img src="./images/dark-instagram.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./images/dark-facebook.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="./images/dark-twitter.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="restaurant-main-page-nav">
           <ul class="restaurant__header__nav__list list">
             <li class="item">
-              <a href="./index.html" class="header__nav__link">HOME</a>
+              <a href="./index.html" class="hotel__nav__header__link">HOME</a>
             </li>
             <li class="item">
-              <a href="./hotel.html" class="header__nav__link">HOTEL</a>
+              <a href="./hotel.html" class="hotel__nav__header__link">HOTEL</a>
             </li>
             <li class="item">
-              <a href="./restaurant.html" class="header__nav__link active"
+              <a
+                href="./restaurant.html"
+                class="hotel__nav__header__link active"
                 >RESTAURANT</a
               >
             </li>
           </ul>
         </nav>
+
         <div class="restaurant__header__title">
           <h1 class="restaurant__header__title__name">MIMINO</h1>
           <p class="restaurant__header__title__text">
@@ -40,52 +114,170 @@
         <ul class="restaurant__header__social__list list">
           <li>
             <a href="">
-              <img src="./images/dark-instagram.svg" alt="instagram" />
+              <img src="./images/hotel-instagram-icon.svg" alt="" />
             </a>
           </li>
           <li>
             <a href="">
-              <img src="./images/dark-facebook.svg" alt="facebook" />
+              <img src="./images/hotel-facebook-icon.svg" alt="" />
             </a>
           </li>
           <li>
             <a href="">
-              <img src="./images/dark-twitter.svg" alt="twitter" />
+              <img src="./images/hotel-twitter-icon.svg" alt="" />
             </a>
           </li>
         </ul>
       </div>
     </header>
     <section class="restaurant__first__section">
-      <div class="restaunrant__first__section__container">
+      <div class="restaurant__first__section__container">
         <div class="restaurant__first__section__items">
           <div class="restaurant__first__section__info">
             <h1 class="restaurant__first__section__title">RESTAURANT</h1>
             <ul class="restaurant__first__section__buttons__list list">
               <li class="item">
-                <button type="button">BOOK A TABLE</button>
+                <button
+                  type="button"
+                  class="open-modal-button"
+                  data-modal-id="bookModal"
+                >
+                  BOOK A TABLE
+                </button>
               </li>
               <li class="item">
-                <button type="button">VIEW A MENU</button>
+                <button
+                  type="button"
+                  class="open-modal-button"
+                  data-modal-id="priceModal"
+                >
+                  VIEW A MENU
+                </button>
               </li>
             </ul>
-            <p class="restaurant__first__section__text">
-              Whether you're in the mood for a hearty breakfast, a light lunch,
-              or a romantic dinner, our menu has something for everyone.
-            </p>
+            <div class="restaurant__first__section__mobile__images">
+              <div class="restaurant__first__section__first__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/restaurant-mobile-first-section-first-image1x.jpg 1x,
+                      ./images/restaurant-mobile-first-section-first-image2x.jpg 2x,
+                      ./images/restaurant-mobile-first-section-first-image3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/restaurant-tablet-first-section-first-image1x.jpg 1x,
+                      ./images/restaurant-tablet-first-section-first-image2x.jpg 2x,
+                      ./images/restaurant-tablet-first-section-first-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    src="./images/restaurant-mobile-first-section-first-image1x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+              <div class="restaurant__first__section__second__image">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/restaurant-mobile-first-section-second-image1x.jpg 1x,
+                      ./images/restaurant-mobile-first-section-second-image2x.jpg 2x,
+                      ./images/restaurant-mobile-first-section-second-image3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/restaurant-tablet-first-section-second-image1x.jpg 1x,
+                      ./images/restaurant-tablet-first-section-second-image2x.jpg 2x,
+                      ./images/restaurant-tablet-first-section-second-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/restaurant-mobile-first-section-second-image1x.jpg"
+                    alt=""
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="first__section__tablet__items">
+              <div class="mobile-arrows">
+                <div class="first-arrow-left">
+                  <button type="button">
+                    <img src="./images/arrow-left.svg" alt="arrow left" />
+                  </button>
+                </div>
+                <div class="secon-arrow-right">
+                  <button type="button">
+                    <img src="./images/arrow-right.svg" alt="arrow right" />
+                  </button>
+                </div>
+              </div>
+              <p class="restaurant__first__section__text">
+                Whether you're in the mood for a hearty breakfast, a light
+                lunch, or a romantic dinner, our menu has something for
+                everyone.
+              </p>
+            </div>
+            <div class="restaurant__desktop__first__secton__items">
+              <p class="restaurant__desktop__first__secton__text">
+                Whether you're in the mood for a hearty breakfast, a light
+                lunch, or a romantic dinner, our menu has something for
+                everyone.
+              </p>
+            </div>
           </div>
-          <div class="restaurant__first__section__images">
+          <div class="restaurant__first__section__desktop__images">
             <div class="restaurant__first__section__first__image">
-              <img
-                src="./images/restaurant-first-section-first-image.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/restaurant-desktop-first-section-first-image1x.jpg 1x,
+                    ./images/restaurant-desktop-first-section-first-image2x.jpg 2x,
+                    ./images/restaurant-desktop-first-section-first-image3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <img
+                  src="./images/restaurant-mobile-first-section-first-image1x.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="desktop-arrows">
+                <div class="first-arrow-left">
+                  <button type="button">
+                    <img src="./images/arrow-left.svg" alt="arrow left" />
+                  </button>
+                </div>
+                <div class="secon-arrow-right">
+                  <button type="button">
+                    <img src="./images/arrow-right.svg" alt="arrow right" />
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="restaurant__first__section__second__image">
-              <img
-                src="./images/restaurant-first-section-second-image.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/restaurant-desktop-first-section-second-image1x.jpg 1x,
+                    ./images/restaurant-desktop-first-section-second-image2x.jpg 2x,
+                    ./images/restaurant-desktop-first-section-second-image3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/restaurant-mobile-first-section-second-image1x.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -93,16 +285,146 @@
     </section>
     <section class="section restaurant__second__section">
       <div class="container">
-        <div class="restaurant__second__section__info">
+        <div class="restaurant-second-section-mobile-tablet-info">
+          <div class="restaurant-second-section-mobile-tablet-info__images">
+            <div
+              class="restaurant-second-section-mobile-tablet-info__first__image__block"
+            >
+              <picture>
+                <source
+                  srcset="
+                    ./images/restaurant-second-section-mobile-image-of-chef1x.jpg 1x,
+                    ./images/restaurant-second-section-mobile-image-of-chef2x.jpg 2x,
+                    ./images/restaurant-second-section-mobile-image-of-chef3x.jpg 3x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./images/restaurant-second-section-tablet-image-of-chef1x.jpg 1x,
+                    ./images/restaurant-second-section-tablet-image-of-chef2x.jpg 2x,
+                    ./images/restaurant-second-section-tablet-image-of-chef3x.jpg 3x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  src="./images/restaurant-second-section-mobile-image-of-chef1x.jpg"
+                  alt="image of chef"
+                />
+              </picture>
+            </div>
+            <div
+              class="restaurant-second-section-mobile-tablet-info__second__images__block"
+            >
+              <div
+                class="restaurant-second-section-mobile-tablet-info__second__images__block__first__image"
+              >
+                <picture>
+                  <source
+                    srcset="
+                      ./images/restaurant-second-section-mobile-second-image1x.jpg 1x,
+                      ./images/restaurant-second-section-mobile-second-image2x.jpg 2x,
+                      ./images/restaurant-second-section-mobile-second-image3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/restaurant-second-section-tablet-second-image1x.jpg 1x,
+                      ./images/restaurant-second-section-tablet-second-image2x.jpg 2x,
+                      ./images/restaurant-second-section-tablet-second-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/restaurant-second-section-mobile-second-image1x.jpg"
+                    alt="image of meat"
+                  />
+                </picture>
+              </div>
+              <div
+                class="restaurant-second-section-mobile-tablet-info__second__images__block__second__image"
+              >
+                <picture>
+                  <source
+                    srcset="
+                      ./images/restaurant-second-section-mobile-third-image1x.jpg 1x,
+                      ./images/restaurant-second-section-mobile-third-image2x.jpg 2x,
+                      ./images/restaurant-second-section-mobile-third-image3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/restaurant-second-section-tablet-third-image1x.jpg 1x,
+                      ./images/restaurant-second-section-tablet-third-image2x.jpg 2x,
+                      ./images/restaurant-second-section-tablet-third-image3x.jpg 3x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <img
+                    src="./images/restaurant-second-section-mobile-third-image1x.jpg"
+                    alt="image of coctail"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="restaurant-second-section-mobile-tablet-info__texts">
+            <div
+              class="restaurant-second-section-mobile-tablet-info__first__text"
+            >
+              <p>
+                At Mimino, we are experts in meat preparation. Our chefs use
+                only the finest and freshest ingredients to create delicious
+                dishes that showcase the flavors of premium cuts of meat.
+              </p>
+            </div>
+            <div
+              class="restaurant-second-section-mobile-tablet-info__second__text"
+            >
+              <p>
+                Our slow-cooking process and expert seasoning bring out the best
+                in each dish, making for an unforgettable dining experience.
+                Come taste the magic of meat preparation at Mimino.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="restaurant__second__section__desktop__info">
           <div class="restaurant__second__section__first__image">
-            <img src="./images/image-of-chef.jpg" alt="" />
+            <picture>
+              <source
+                srcset="
+                  ./images/restaurant-desktop-image-of-chef1x.jpg 1x,
+                  ./images/restaurant-desktop-image-of-chef2x.jpg 2x,
+                  ./images/restaurant-desktop-image-of-chef3x.jpg 3x
+                "
+                media="(min-width:1024px)"
+              />
+              <img
+                src="./images/restaurant-desktop-image-of-chef1x.jpg"
+                alt="image of chef"
+              />
+            </picture>
           </div>
           <div class="restaurant__second__section__second__image__text">
             <div class="restaurant__second__section__second__image">
-              <img
-                src="./images/restaurant__second__section__second__image.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/restaurant-desktop-second-section-second-image1x.jpg 1x,
+                    ./images/restaurant-desktop-second-section-second-image2x.jpg 2x,
+                    ./images/restaurant-desktop-second-section-second-image3x.jpg 3x
+                  "
+                  media="(min-width:1024px)"
+                />
+                <img
+                  src="./images/restaurant-desktop-second-section-second-image1x.jpg"
+                  alt="image of meat"
+                />
+              </picture>
             </div>
             <p class="restaurant__second__section__first__text">
               At Mimino, we are experts in meat preparation. Our chefs use only
@@ -112,10 +434,20 @@
           </div>
           <div class="restaurant__second__section__third__image__text">
             <div class="restaurant__second__section__third__image">
-              <img
-                src="./images/restaurant__second__section__third__image.jpg"
-                alt=""
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/restaurant-desktop-second-section-third-image1x.jpg 1x,
+                    ./images/restaurant-desktop-second-section-third-image2x.jpg 2x,
+                    ./images/restaurant-desktop-second-section-third-image3x.jpg 3x
+                  "
+                  media="(min-width:1024px)"
+                />
+                <img
+                  src="./images/restaurant-desktop-second-section-third-image1x.jpg"
+                  alt="image of coctail"
+                />
+              </picture>
             </div>
             <p class="restaurant__second__section__second__text">
               Our slow-cooking process and expert seasoning bring out the best
@@ -129,7 +461,167 @@
     <section class="restaurant__third__section">
       <div class="hotel__third__section__container">
         <h1 class="restaurant__third__section__title">RESTAURANT MENU</h1>
+        <!-- Main slider container -->
+        <!-- <div class="swiper"> -->
+        <!-- mondatory shell -->
+        <!-- <div class="swiper-wrapper"> -->
+        <!-- slides -->
+        <!-- <div class="swiper-slide"> -->
+        <!-- content into slides -->
+        <div class="restaurant__third__section__mobile__tablet__block">
+          <div class="restaurant__third__section__mobile__tablet__first__list">
+            <h2 class="restaurant__third__section__mobile__tablet__list__title">HOT MEALS</h2>
+            <ul class="restaurant__third__section__mobile__tablet__list list">
+              <li class="item">
+                <div class="restaurant__third__section__mobile__tablet__list__item">
+                  <div class="restaurant__third__section__mobile__tablet__list__info">
+                    <h3 class="rastaurat__third__section__mobile__tablet__list__item__name">
+                      Veal borscht with beans
+                    </h3>
+                    <p
+                      class="restaurant__third__section__mobile__tablet__list__item__ingredients"
+                    >
+                      Veal, potatoes, cabbage, carrots, onions, beans, garlic,
+                      tomatoes, greens, sour cream
+                    </p>
+                  </div>
+                  <div class="restaurant__third__section__mobile__tablet__list__price">
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__weight">
+                      400 g
+                    </p>
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__price">
+                      240 UAH
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="restaurant__third__section__mobile__tablet__list__item">
+                  <div class="restaurant__third__section__mobile__tablet__list__info">
+                    <h3 class="rastaurat__third__section__mobile__tablet__list__item__name">
+                      Cheese soup with chicken
+                    </h3>
+                    <p
+                      class="restaurant__third__section__mobile__tablet__list__item__ingredients"
+                    >
+                      Chicken, potatoes, carrots, onions, mushrooms, soft
+                      cheese, greens
+                    </p>
+                  </div>
+                  <div class="restaurant__third__section__mobile__tablet__list__price">
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__weight">
+                      400 g
+                    </p>
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__price">
+                      200 UAH
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="restaurant__third__section__mobile__tablet__list__item">
+                  <div class="restaurant__third__section__mobile__tablet__list__info">
+                    <h3 class="rastaurat__third__section__mobile__tablet__list__item__name">
+                      Carbonara pasta
+                    </h3>
+                    <p
+                      class="restaurant__third__section__mobile__tablet__list__item__ingredients"
+                    >
+                      Tagliatelle pasta, bacon, cream, Parmesan cheese, egg,
+                      greens
+                    </p>
+                  </div>
+                  <div class="restaurant__third__section__mobile__tablet__list__price">
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__weight">
+                      400 g
+                    </p>
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__price">
+                      430 UAH
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="restaurant__third__section__mobile__tablet__list__item">
+                  <div class="restaurant__third__section__mobile__tablet__list__info">
+                    <h3 class="rastaurat__third__section__mobile__tablet__list__item__name">
+                      Pork steak
+                    </h3>
+                    <p
+                      class="restaurant__third__section__mobile__tablet__list__item__ingredients"
+                    >
+                      Pork tenderloin, spices, served with sweet chili sauce and
+                      vegetables
+                    </p>
+                  </div>
+                  <div class="restaurant__third__section__mobile__tablet__list__price">
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__weight">
+                      400 g
+                    </p>
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__price">
+                      500 UAH
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="restaurant__third__section__mobile__tablet__list__item">
+                  <div class="restaurant__third__section__mobile__tablet__list__info">
+                    <h3 class="rastaurat__third__section__mobile__tablet__list__item__name">
+                      Gorbusha in white wine sauce
+                    </h3>
+                    <p
+                      class="restaurant__third__section__mobile__tablet__list__item__ingredients"
+                    >
+                      Tender redfish, cream sauce based on white wine
+                    </p>
+                  </div>
+                  <div class="restaurant__third__section__mobile__tablet__list__price">
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__weight">
+                      400 g
+                    </p>
+                    <p class="rastaurat__third__section__mobile__tablet__list__item__price">
+                      400 UAH
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+          <!-- <div class="swiper-slide"> -->
+          <!-- content into slides -->
 
+          <!-- </div> -->
+          <!-- <div class="swiper-slide"> -->
+          <!-- content into slides -->
+          <!-- </div> -->
+          <!-- <div class="swiper-slide"> -->
+          <!-- content into slides -->
+          <!-- </div> -->
+          <!-- and so on -->
+          <!-- </div> -->
+          <!-- swiper arrow buttons -->
+          <div class="swiper-buttons">
+            <div class="restaurant-third-section__mobile__tablet__arrow-left">
+              <img src="./images/restaurant-arrow-left.svg" alt="" />
+            </div>
+            <div class="restaurant-third-section__mobile__tablet__arrow-right">
+              <img src="./images/restaurant-arrow-right.svg" alt="" />
+            </div>
+            <!-- </div> -->
+          </div>
+
+          <div class="restaurant__third__section__mobile__tablet__buttons">
+            <button
+              type="button"
+              class="restaurant__third__section__mobile__tablet__block__button open-modal-button"
+              data-modal-id="bookModal"
+            >
+              BOOK A TABLE
+            </button>
+          </div>
+        </div>
         <div class="restaurant__third__section__first__list__block">
           <div class="restaurant__third__section__lists">
             <div class="restaurant__third__section__first__list">
@@ -574,45 +1066,156 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer restaurant-footer-section">
       <div class="footer__container">
-        <nav>
-          <ul class="footer__nav__list list">
+        <div class="footer__desktop__items">
+          <nav>
+            <ul class="footer__nav__list list">
+              <li class="item">
+                <a href="./index.html" class="footer__nav__link">HOME</a>
+              </li>
+              <li class="item">
+                <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+              </li>
+              <li class="item">
+                <a href="./restaurant.html" class="footer__nav__link"
+                  >RESTAURANT</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__title">
+            <h1 class="footer__title__name">MIMINO</h1>
+            <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+          </div>
+          <ul class="footer__social__list list">
             <li class="item">
-              <a href="./index.html" class="footer__nav__link">HOME</a>
+              <a href="">
+                <img src="./images/dark-instagram.svg" alt="instagram" />
+              </a>
             </li>
             <li class="item">
-              <a href="./hotel.html" class="footer__nav__link">HOTEL</a>
+              <a href="">
+                <img src="./images/dark-facebook.svg" alt="facebook" />
+              </a>
             </li>
             <li class="item">
-              <a href="./restaurant.html" class="footer__nav__link"
-                >RESTAURANT</a
-              >
+              <a href="">
+                <img src="./images/dark-twitter.svg" alt="twitter" />
+              </a>
             </li>
           </ul>
-        </nav>
-        <div class="footer__title">
-          <h1 class="footer__title__name">MIMINO</h1>
-          <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
         </div>
-        <ul class="footer__social__list list">
-          <li class="item">
-            <a href="">
-              <img src="./images/dark-instagram.svg" alt="instagram" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              <img src="./images/dark-facebook.svg" alt="facebook" />
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              <img src="./images/dark-twitter.svg" alt="twitter" />
-            </a>
-          </li>
-        </ul>
+        <div class="mobile-footer-items">
+          <div class="footer__title">
+            <h1 class="footer__title__name">MIMINO</h1>
+            <p class="footer__title__text">RESTAURANT-HOTEL COMPLEX</p>
+          </div>
+          <ul class="footer__social__list list">
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="item">
+              <a href="">
+                <img src="./images/dark-twitter.svg" alt="twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden"></div>
+    <div class="restaurant-modal" id="bookModal">
+      <div class="restaurant-book-modal">
+        <h2 class="restaurant-book-modal__title">BOOK A TABLE</h2>
+        <button
+          type="button"
+          class="book-modal__exit__button"
+          data-modal-id="bookModal"
+        >
+          <svg width="32px" height="32px">
+            <use href="./images/symbol-defs.svg#icon-exit-button"></use>
+          </svg>
+        </button>
+        <form class="restaurant-book-modal__form">
+          <label class="restaurant-field">
+            <input
+              type="name"
+              name="user-name"
+              class="restaurant-book-modal__form__input"
+              placeholder="YOUR NAME"
+            />
+            <span class="restaurant-book-modal__form__name__text"
+              >WHO SHOULD BOOK A TABLE FOR?</span
+            >
+          </label>
+
+          <div class="restaurant-custom-select">
+            <div class="dropdown">
+              <button type="button" class="restaurant-custom-select__button">
+                NUMBER OF PEOPLE
+              </button>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="restaurant-custom-select__input__hidden"
+              />
+              <ul class="restaurant-custom-select__list list">
+                <li class="item" data-value="1">1</li>
+                <li class="item" data-value="2">2</li>
+                <li class="item" data-value="3">3</li>
+                <li class="item" data-value="4">4</li>
+                <li class="item" data-value="5">5</li>
+              </ul>
+            </div>
+          </div>
+
+          <label class="restaurant-field date-field">
+            <input
+              type="date"
+              name="check-in date"
+              class="restaurant-book-modal__form__input__date"
+              placeholder="TODAY"
+            />
+            <span class="restaurant-book-modal__form__name__text"
+              >WHAT DATE TO BOOK?</span
+            >
+          </label>
+
+          <label class="restaurant-field">
+            <input
+              type="tel"
+              name="tel"
+              class="restaurant-book-modal__form__input"
+              placeholder="+38 ()"
+              maxlength="13"
+            />
+            <span class="restaurant-book-modal__form__name__text"
+              >PHONE NUMBER</span
+            >
+          </label>
+
+          <button type="submit" class="restaurant-book-modal__submit__button">
+            MAKE A RESERVATION
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
+
+  <script src="./js/restaurant-custom-select.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/price-modal.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
+cu
