@@ -1,3 +1,10 @@
+/* Semantically create the block for html styling */
+/* Get to know how to write short names for padding and margin */
+/* It means that that 0 will be set for top, right bottom and left */
+/* Read about em, rem  */
+/* Read about grid */
+/* Preprocessors  sass, scss, less */
+
 li {
   list-style: none;
 }
@@ -3692,7 +3699,7 @@ ul ::marker {
   .restaurant-book-modal__submit__button {
     order: 5;
   }
-  
+
   .restaurant-book-modal__form__input {
     font-family: inherit;
     font-weight: 500;
@@ -5651,7 +5658,7 @@ ul ::marker {
     display: none;
   }
 
-  .dlr-second-section__items{
+  .dlr-second-section__items {
     display: none;
   }
   .dlr__first__section {
@@ -5898,27 +5905,27 @@ ul ::marker {
     color: var(--dark-color);
   }
 
-  .dlr-second-setion-desktop-lists__third__block{
+  .dlr-second-setion-desktop-lists__third__block {
     display: flex;
     justify-content: space-between;
   }
-  .dlr-second-section__desktop__items{
+  .dlr-second-section__desktop__items {
     position: relative;
-    margin-top:84px;
+    margin-top: 84px;
   }
-  .dlr-second-section__desktop__items__first__image{
-    width:496px;
-  }
-
-  .dlr-second-section__desktop__items__second__image{
-    position: absolute;
-    top:208px;
-    left:-350px;
+  .dlr-second-section__desktop__items__first__image {
+    width: 496px;
   }
 
-  .dlr-second-section__button{
+  .dlr-second-section__desktop__items__second__image {
     position: absolute;
-    right:675px;
-    top:450px;
+    top: 208px;
+    left: -350px;
+  }
+
+  .dlr-second-section__button {
+    position: absolute;
+    right: 675px;
+    top: 450px;
   }
 }
