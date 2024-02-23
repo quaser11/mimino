@@ -325,6 +325,7 @@ ul ::marker {
     padding-bottom: 5px;
   }
 }
+
 /* first section */
 
 .first__section {
@@ -337,6 +338,7 @@ ul ::marker {
   height: 439px;
   z-index: -1;
 }
+
 .first__section__container {
   max-width: 375px;
   padding-bottom: 38px;
@@ -2033,7 +2035,7 @@ ul ::marker {
 }
 
 .icon-container {
-  margin-top: 130px;
+  margin-top: 300px;
   padding-left: 20px;
 }
 .js-menu-container {
